@@ -63,23 +63,22 @@ namespace ProjecteSecureCoreS2AM.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap commit_jedi_intro {
+        internal static System.Drawing.Bitmap commit_jedi_splash {
             get {
-                object obj = ResourceManager.GetObject("commit-jedi-intro", resourceCulture);
+                object obj = ResourceManager.GetObject("commit_jedi_splash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
         /// </summary>
-        internal static System.Drawing.Bitmap commit_jedi_intro_1_ {
+        internal static System.IO.UnmanagedMemoryStream commit_jedi_splash_audio {
             get {
-                object obj = ResourceManager.GetObject("commit-jedi-intro(1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetStream("commit_jedi_splash_audio", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>

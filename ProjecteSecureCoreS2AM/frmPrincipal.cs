@@ -12,23 +12,32 @@ namespace ProjecteSecureCoreS2AM
 {
     public partial class frmPrincipal : Form
     {
+        private SplashScreenAudioCode intro;
+
         public frmPrincipal()
         {
             InitializeComponent();
         }
-   
-
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-           
-          
-        }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
+            ClientSize = pictureBox1.Image.Size;
+            CenterToScreen();
+
             timer1.Start();
-            
-            
+
+
+        }
+
+        private void frmPrincipal_Shown(object sender, EventArgs e)
+        {
+            intro = new SplashScreenAudioCode(pictureBox1, Properties.Resources.commit_jedi_splash_audio);
+            intro.Iniciar();
+        }
+
+        private void frmPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            intro?.Dispose();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -37,12 +46,5 @@ namespace ProjecteSecureCoreS2AM
             //Poner la dll con reflection del formulario o el formulario directo
             //Parte del sergi
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
-
-    // dev
 }

@@ -16,13 +16,6 @@ namespace ProjecteSecureCoreS2AM
         {
             InitializeComponent();
         }
-   
-
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-           
-          
-        }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
@@ -37,12 +30,5 @@ namespace ProjecteSecureCoreS2AM
             //Poner la dll con reflection del formulario o el formulario directo
             //Parte del sergi
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
-
-    // dev
 }

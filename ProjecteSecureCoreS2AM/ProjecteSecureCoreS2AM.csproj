@@ -52,6 +52,7 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="SplashScreenAudioCode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmPrincipal.resx">
@@ -84,10 +85,10 @@
     <None Include="Resources\logo_CommitJedi_fondo_transparente.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\commit-jedi-intro.gif" />
+    <None Include="Resources\commit_jedi_splash.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\commit-jedi-intro%281%29.gif" />
+    <None Include="Resources\commit_jedi_splash_audio.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

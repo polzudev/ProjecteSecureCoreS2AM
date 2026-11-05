@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace ProjecteSecureCoreS2AM
 {
-    public partial class frmPrincipal : Form
+    public partial class frmSplashScreen : Form
     {
         private SplashScreenAudioCode intro;
 
-        public frmPrincipal()
+        public frmSplashScreen()
         {
             InitializeComponent();
         }
 
-        private void frmPrincipal_Load(object sender, EventArgs e)
+        private void frmSplashScreen_Load(object sender, EventArgs e)
         {
             ClientSize = pictureBox1.Image.Size;
             CenterToScreen();
@@ -29,13 +29,13 @@ namespace ProjecteSecureCoreS2AM
 
         }
 
-        private void frmPrincipal_Shown(object sender, EventArgs e)
+        private void frmSplashScreen_Shown(object sender, EventArgs e)
         {
             intro = new SplashScreenAudioCode(pictureBox1, Properties.Resources.commit_jedi_splash_audio);
             intro.Iniciar();
         }
 
-        private void frmPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        private void frmSplashScreen_FormClosed(object sender, FormClosedEventArgs e)
         {
             intro?.Dispose();
         }
@@ -43,8 +43,12 @@ namespace ProjecteSecureCoreS2AM
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Stop();
-            //Poner la dll con reflection del formulario o el formulario directo
-            //Parte del sergi
+            Hide();
+            using (frmLogin login = new frmLogin())
+            {
+                login.ShowDialog();
+            }
+            Close();
         }
     }
 }

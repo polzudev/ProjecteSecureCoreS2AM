@@ -1,7 +1,7 @@
 ﻿
 namespace ProjecteSecureCoreS2AM
 {
-    partial class frmPrincipal
+    partial class frmSplashScreen
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -62,7 +62,7 @@ namespace ProjecteSecureCoreS2AM
             this.timer1.Interval = 5400;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             //
-            // frmPrincipal
+            // frmSplashScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -71,12 +71,12 @@ namespace ProjecteSecureCoreS2AM
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmPrincipal";
+            this.Name = "frmSplashScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmPrincipal";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmPrincipal_FormClosed);
-            this.Load += new System.EventHandler(this.frmPrincipal_Load);
-            this.Shown += new System.EventHandler(this.frmPrincipal_Shown);
+            this.Text = "frmSplashScreen";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmSplashScreen_FormClosed);
+            this.Load += new System.EventHandler(this.frmSplashScreen_Load);
+            this.Shown += new System.EventHandler(this.frmSplashScreen_Shown);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

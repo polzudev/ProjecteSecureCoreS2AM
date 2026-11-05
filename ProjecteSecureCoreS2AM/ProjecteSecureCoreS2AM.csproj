@@ -69,6 +69,7 @@
     </Compile>
     <Compile Include="SplashScreen\SplashScreenAudioCode.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="SplashForm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CambioPassword\frmCambioPassword.resx">
       <DependentUpon>frmCambioPassword.cs</DependentUpon>
@@ -106,10 +107,15 @@
     <None Include="Resources\logo_CommitJedi_fondo_transparente.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\commit_jedi_splash.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\commit_jedi_splash_audio.wav" />
+    <Content Include="Resources\commit-jedi-intro.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\commit-jedi-intro%281%29.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\intro.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

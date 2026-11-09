@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace ProjecteSecureCoreS2AM
 {
-    // Generat amb Claude
+    // Generat amb IA
     // Prompt utilitzat ->
-    // "En un projecte C# Windows Forms, vull crear una classe SplashScreenAudioCode
+    //  En un projecte C# Windows Forms, vull crear una classe SplashScreenAudioCode
     //  que reprodueixi un GIF animat de 5,4 s en un PictureBox sincronitzat amb un
     //  so WAV dels recursos. Vull que es pugui veure a 60 fps amb un Timer de 5 ms
     public class SplashScreenAudioCode : IDisposable

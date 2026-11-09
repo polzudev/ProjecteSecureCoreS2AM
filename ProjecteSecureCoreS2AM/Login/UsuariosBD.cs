@@ -4,7 +4,6 @@ using System.Data.SqlClient;
 
 namespace ProjecteSecureCoreS2AM
 {
-    // Acceso a la tabla Users para la validación. Todas las consultas van con parámetros (sin SQL Injection).
     public class UsuariosBD
     {
         private string CadenaConexion
@@ -20,7 +19,6 @@ namespace ProjecteSecureCoreS2AM
             }
         }
 
-        // Devuelve la fila del usuario con ese login, o null si no existe
         public DataRow ObtenerUsuario(string login)
         {
             string query = "select idUser, CodeUser, UserName, Login, Password, Salt, idUserCategory, idUserRank from Users where Login = @login";
@@ -37,7 +35,6 @@ namespace ProjecteSecureCoreS2AM
             }
         }
 
-        // Guarda el Salt y, en lugar de la contraseña inicial en claro, su Hash
         public void GuardarPassword(int idUser, string salt, string hash)
         {
             string query = "update Users set Salt = @salt, Password = @hash where idUser = @idUser";

@@ -8,7 +8,11 @@ using System.Windows.Forms;
 
 namespace ProjecteSecureCoreS2AM
 {
-    // Reproduce un GIF animado en un PictureBox sincronizado con un sonido WAV.
+    // Generat amb Claude
+    // Prompt utilitzat ->
+    // "En un projecte C# Windows Forms, vull crear una classe SplashScreenAudioCode
+    //  que reprodueixi un GIF animat de 5,4 s en un PictureBox sincronitzat amb un
+    //  so WAV dels recursos. Vull que es pugui veure a 60 fps amb un Timer de 5 ms
     public class SplashScreenAudioCode : IDisposable
     {
         private const int FotogramasPorSegundo = 60;

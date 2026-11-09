@@ -84,7 +84,7 @@ namespace ProjecteSecureCoreS2AM
             this.txtNueva.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNueva.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(248)))));
             this.txtNueva.Location = new System.Drawing.Point(53, 153);
-            this.txtNueva.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNueva.Margin = new System.Windows.Forms.Padding(4);
             this.txtNueva.Name = "txtNueva";
             this.txtNueva.Size = new System.Drawing.Size(453, 32);
             this.txtNueva.TabIndex = 3;
@@ -99,9 +99,9 @@ namespace ProjecteSecureCoreS2AM
             this.lblRepetir.Location = new System.Drawing.Point(53, 202);
             this.lblRepetir.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRepetir.Name = "lblRepetir";
-            this.lblRepetir.Size = new System.Drawing.Size(121, 20);
+            this.lblRepetir.Size = new System.Drawing.Size(127, 20);
             this.lblRepetir.TabIndex = 4;
-            this.lblRepetir.Text = "Repeat Password";
+            this.lblRepetir.Text = "Confirm Password";
             // 
             // txtRepetir
             // 
@@ -110,7 +110,7 @@ namespace ProjecteSecureCoreS2AM
             this.txtRepetir.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRepetir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(248)))));
             this.txtRepetir.Location = new System.Drawing.Point(53, 226);
-            this.txtRepetir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRepetir.Margin = new System.Windows.Forms.Padding(4);
             this.txtRepetir.Name = "txtRepetir";
             this.txtRepetir.Size = new System.Drawing.Size(453, 32);
             this.txtRepetir.TabIndex = 5;
@@ -143,7 +143,7 @@ namespace ProjecteSecureCoreS2AM
             this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(194)))), ((int)(((byte)(48)))));
             this.btnGuardar.Location = new System.Drawing.Point(53, 409);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(220, 49);
             this.btnGuardar.TabIndex = 8;
@@ -160,7 +160,7 @@ namespace ProjecteSecureCoreS2AM
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(207)))), ((int)(((byte)(220)))));
             this.btnCancelar.Location = new System.Drawing.Point(287, 409);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(220, 49);
             this.btnCancelar.TabIndex = 9;
@@ -187,7 +187,7 @@ namespace ProjecteSecureCoreS2AM
             this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.lblTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmCambioPassword";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

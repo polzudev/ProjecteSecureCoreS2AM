@@ -5,7 +5,6 @@ using System.Security.Cryptography;
 
 namespace ProjecteSecureCoreS2AM
 {
-    // Hash de contraseñas con PBKDF2 (Rfc2898DeriveBytes) y un Salt aleatorio por usuario.
     public static class GestorPasswords
     {
         public const string PasswordInicial = "12345aA";
@@ -33,7 +32,6 @@ namespace ProjecteSecureCoreS2AM
             }
         }
 
-        // En la BD los bytes se guardan como texto hexadecimal separado por guiones (BitConverter)
         public static string ATexto(byte[] bytes)
         {
             return BitConverter.ToString(bytes);
@@ -49,7 +47,6 @@ namespace ProjecteSecureCoreS2AM
             return HashesIguales(CalcularHash(password, salt), hashGuardado);
         }
 
-        // Compara todos los bytes aunque encuentre una diferencia, para que el tiempo no dé pistas
         private static bool HashesIguales(byte[] primero, byte[] segundo)
         {
             uint diferencia = (uint)primero.Length ^ (uint)segundo.Length;
@@ -60,7 +57,6 @@ namespace ProjecteSecureCoreS2AM
             return diferencia == 0;
         }
 
-        // Devuelve los requisitos que no cumple la contraseña nueva (lista vacía si es válida)
         public static List<string> RequisitosIncumplidos(string password)
         {
             List<string> incumplidos = new List<string>();

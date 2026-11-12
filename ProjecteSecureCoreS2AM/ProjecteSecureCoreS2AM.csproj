@@ -61,6 +61,19 @@
     </Compile>
     <Compile Include="Login\GestorPasswords.cs" />
     <Compile Include="Login\UsuariosBD.cs" />
+    <Compile Include="Principal\frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\PrincipalBD.cs" />
+    <Compile Include="SWLauchForm\SWLauchForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SWLauchForm\SWLauchForm.Designer.cs">
+      <DependentUpon>SWLauchForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SplashScreen\frmSplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +89,9 @@
     <EmbeddedResource Include="Login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Principal\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen\frmSplashScreen.resx">
       <DependentUpon>frmSplashScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +105,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SWLauchForm\SWLauchForm.resx">
+      <DependentUpon>SWLauchForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

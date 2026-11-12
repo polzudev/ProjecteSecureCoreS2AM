@@ -17,7 +17,7 @@ namespace ProjecteSecureCoreS2AM
 
         public DataRow ObtenerUsuario(string login)
         {
-            string query = "select idUser, CodeUser, UserName, Login, Password, Salt, idUserCategory, idUserRank from Users where Login = @login";
+            string query = "select u.idUser, u.CodeUser, u.UserName, u.Login, u.Password, u.Salt, u.idUserCategory, u.idUserRank, uc.DescCategory from Users u left join UserCategories uc on u.idUserCategory = uc.idUserCategory where u.Login = @login";
             using (SqlConnection conn = new SqlConnection(CadenaConexion))
             using (SqlDataAdapter adapter = new SqlDataAdapter(query, conn))
             {

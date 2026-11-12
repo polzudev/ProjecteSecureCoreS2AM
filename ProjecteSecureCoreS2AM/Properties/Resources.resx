@@ -124,7 +124,19 @@
   <data name="commit_jedi_splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\commit_jedi_splash.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mango_sable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mango_sable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mango_sable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mango_sable1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mango (fondo transparente)@1x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mango (fondo transparente)@1x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="commit_jedi_splash_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\commit_jedi_splash_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mango_sable2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mango_sable.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

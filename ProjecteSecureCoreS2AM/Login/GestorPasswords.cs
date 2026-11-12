@@ -44,17 +44,7 @@ namespace ProjecteSecureCoreS2AM
 
         public static bool VerificarPassword(string password, byte[] salt, byte[] hashGuardado)
         {
-            return HashesIguales(CalcularHash(password, salt), hashGuardado);
-        }
-
-        private static bool HashesIguales(byte[] primero, byte[] segundo)
-        {
-            uint diferencia = (uint)primero.Length ^ (uint)segundo.Length;
-            for (int i = 0; i < primero.Length && i < segundo.Length; i++)
-            {
-                diferencia |= (uint)(primero[i] ^ segundo[i]);
-            }
-            return diferencia == 0;
+            return CalcularHash(password, salt).SequenceEqual(hashGuardado);
         }
 
         public static List<string> RequisitosIncumplidos(string password)

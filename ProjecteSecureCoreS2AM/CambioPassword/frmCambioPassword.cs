@@ -29,12 +29,12 @@ namespace ProjecteSecureCoreS2AM
             List<string> incumplidos = GestorPasswords.RequisitosIncumplidos(txtNueva.Text);
             if (incumplidos.Count == 0)
             {
-                lblRequisitos.Text = "✔ Compleix tots els requisits";
+                lblRequisitos.Text = ":) Compleix tots els requisits";
                 lblRequisitos.ForeColor = ColorCorrecto;
             }
             else
             {
-                lblRequisitos.Text = string.Join(Environment.NewLine, incumplidos.Select(r => "✖ " + r));
+                lblRequisitos.Text = string.Join("\n", incumplidos.Select(r => "x " + r));
                 lblRequisitos.ForeColor = ColorError;
             }
 
@@ -45,12 +45,12 @@ namespace ProjecteSecureCoreS2AM
             }
             else if (coinciden)
             {
-                lblCoincidencia.Text = "✔ Les paraules de pas coincideixen";
+                lblCoincidencia.Text = ":D Les paraules de pas coincideixen";
                 lblCoincidencia.ForeColor = ColorCorrecto;
             }
             else
             {
-                lblCoincidencia.Text = "✖ Les paraules de pas no coincideixen";
+                lblCoincidencia.Text = "x Les paraules de pas no coincideixen";
                 lblCoincidencia.ForeColor = ColorError;
             }
 

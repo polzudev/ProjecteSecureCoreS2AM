@@ -20,12 +20,18 @@ namespace ProjecteSecureCoreS2AM
             lblMensaje.Text = "";
             string login = txtLogin.Text.Trim();
             string password = txtPassword.Text;
-            if (login == "" || password == "")
+            if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password))
             {
-                lblMensaje.Text = "Introdueix l'identificador i la paraula de pas.";
-                return;
+                lblMensaje.Text = "Introdueix el Username i la paraula de pas.";
             }
+            else
+            {
+                IniciarSesion(login, password);
+            }
+        }
 
+        private void IniciarSesion(string login, string password)
+        {
             try
             {
                 DataRow usuario = bd.ObtenerUsuario(login);
@@ -40,19 +46,17 @@ namespace ProjecteSecureCoreS2AM
                         lblMensaje.Text = "Cal canviar la paraula de pas inicial per poder entrar.";
                         txtPassword.Clear();
                     }
-                    return;
                 }
-
-                if (usuario != null && PasswordCorrecta(usuario, password))
+                else if (usuario != null && PasswordCorrecta(usuario, password))
                 {
                     Validar(usuario);
-                    return;
                 }
-
-                // No se dice si falla el usuario o la contraseña
-                lblMensaje.Text = "Identificador o paraula de pas incorrectes.";
-                txtPassword.Clear();
-                txtPassword.Focus();
+                else
+                {
+                    lblMensaje.Text = "Identificador o paraula de pas incorrectes.";
+                    txtPassword.Clear();
+                    txtPassword.Focus();
+                }
             }
             catch (Exception ex)
             {
@@ -60,7 +64,6 @@ namespace ProjecteSecureCoreS2AM
             }
         }
 
-        // Primer acceso: escribe la contraseña inicial y en la BD todavía tiene la inicial en claro (sin Salt)
         private bool EsPrimerAcceso(DataRow usuario, string password)
         {
             return password == GestorPasswords.PasswordInicial
@@ -68,38 +71,32 @@ namespace ProjecteSecureCoreS2AM
                 && usuario["Password"].ToString() == GestorPasswords.PasswordInicial;
         }
 
-        // Con Salt, la columna Password guarda el Hash: se recalcula y se comparan
         private bool PasswordCorrecta(DataRow usuario, string password)
         {
-            if (usuario["Salt"] == DBNull.Value)
-            {
-                return false;
-            }
-            try
+            bool correcta = false;
+            if (usuario["Salt"] != DBNull.Value)
             {
                 byte[] salt = GestorPasswords.ABytes(usuario["Salt"].ToString());
                 byte[] hash = GestorPasswords.ABytes(usuario["Password"].ToString());
-                return GestorPasswords.VerificarPassword(password, salt, hash);
+                correcta = GestorPasswords.VerificarPassword(password, salt, hash);
             }
-            catch (FormatException)
-            {
-                return false;
-            }
+            return correcta;
         }
 
         private bool CambiarPasswordInicial(DataRow usuario)
         {
+            bool cambiada = false;
             using (frmCambioPassword frm = new frmCambioPassword())
             {
-                if (frm.ShowDialog(this) != DialogResult.OK)
+                if (frm.ShowDialog(this) == DialogResult.OK)
                 {
-                    return false;
+                    byte[] salt = GestorPasswords.GenerarSalt();
+                    byte[] hash = GestorPasswords.CalcularHash(frm.NuevaPassword, salt);
+                    bd.GuardarPassword((int)usuario["idUser"], GestorPasswords.ATexto(salt), GestorPasswords.ATexto(hash));
+                    cambiada = true;
                 }
-                byte[] salt = GestorPasswords.GenerarSalt();
-                byte[] hash = GestorPasswords.CalcularHash(frm.NuevaPassword, salt);
-                bd.GuardarPassword((int)usuario["idUser"], GestorPasswords.ATexto(salt), GestorPasswords.ATexto(hash));
-                return true;
             }
+            return cambiada;
         }
 
         private void Validar(DataRow usuario)

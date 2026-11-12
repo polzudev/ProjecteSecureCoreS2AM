@@ -154,6 +154,8 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+    <None Include="Resources\commit_jedi_splash.gif" />
+    <None Include="Resources\commit_jedi_splash_audio.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

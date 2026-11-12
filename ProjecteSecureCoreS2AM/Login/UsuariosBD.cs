@@ -11,21 +11,17 @@ namespace ProjecteSecureCoreS2AM
             get
             {
                 ConnectionStringSettings conf = ConfigurationManager.ConnectionStrings["SecureCore"];
-                if (conf == null)
-                {
-                    throw new ConfigurationErrorsException("Falta la cadena de connexió 'SecureCore' a App.config");
-                }
                 return conf.ConnectionString;
             }
         }
 
         public DataRow ObtenerUsuario(string login)
         {
-            string query = "select idUser, CodeUser, UserName, Login, Password, Salt, idUserCategory, idUserRank from Users where Login = @login";
+            string query = "select u.idUser, u.CodeUser, u.UserName, u.Login, u.Password, u.Salt, u.idUserCategory, u.idUserRank, uc.DescCategory from Users u left join UserCategories uc on u.idUserCategory = uc.idUserCategory where u.Login = @login";
             using (SqlConnection conn = new SqlConnection(CadenaConexion))
             using (SqlDataAdapter adapter = new SqlDataAdapter(query, conn))
             {
-                adapter.SelectCommand.Parameters.Add("@login", SqlDbType.NVarChar, 12).Value = login;
+                adapter.SelectCommand.Parameters.AddWithValue("@login", login);
                 DataSet dts = new DataSet();
                 conn.Open();
                 adapter.Fill(dts, "Users");
@@ -41,9 +37,9 @@ namespace ProjecteSecureCoreS2AM
             using (SqlConnection conn = new SqlConnection(CadenaConexion))
             using (SqlCommand cmd = new SqlCommand(query, conn))
             {
-                cmd.Parameters.Add("@salt", SqlDbType.NVarChar, 200).Value = salt;
-                cmd.Parameters.Add("@hash", SqlDbType.NVarChar, 200).Value = hash;
-                cmd.Parameters.Add("@idUser", SqlDbType.Int).Value = idUser;
+                cmd.Parameters.AddWithValue("@salt", salt);
+                cmd.Parameters.AddWithValue("@hash", hash);
+                cmd.Parameters.AddWithValue("@idUser", idUser);
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 conn.Close();

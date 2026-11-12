@@ -44,9 +44,22 @@ namespace ProjecteSecureCoreS2AM
         {
             timer1.Stop();
             Hide();
-            using (frmLogin login = new frmLogin())
+            // Login -> pantalla principal. Si el usuario cierra sesión se vuelve a pedir el login
+            bool mostrarLogin = true;
+            while (mostrarLogin)
             {
-                login.ShowDialog();
+                mostrarLogin = false;
+                using (frmLogin login = new frmLogin())
+                {
+                    if (login.ShowDialog() == DialogResult.OK)
+                    {
+                        using (frmPrincipal principal = new frmPrincipal(login.UsuarioValidado))
+                        {
+                            principal.ShowDialog();
+                            mostrarLogin = principal.SesionCerrada;
+                        }
+                    }
+                }
             }
             Close();
         }

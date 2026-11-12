@@ -1,7 +1,7 @@
 using System;
 using System.Data;
 using System.Windows.Forms;
-
+using ProjecteSecureCoreS2AM.Benvinguda;
 namespace ProjecteSecureCoreS2AM
 {
     public partial class frmLogin : Form
@@ -106,11 +106,20 @@ namespace ProjecteSecureCoreS2AM
         {
             UsuarioValidado = usuario;
             DialogResult = DialogResult.OK;
+            Hide();
+            using (frmBenvinguda benvinguda = new frmBenvinguda(usuario["UserName"].ToString(), usuario["DescCategory"].ToString()))
+            {
+                benvinguda.ShowDialog();
+            }
+            Close();
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
         }
+
+        private void frmLogin_Load(object sender, EventArgs e) { }
     }
 }

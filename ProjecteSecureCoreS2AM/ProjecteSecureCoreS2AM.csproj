@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Benvinguda\frmBenvinguda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Benvinguda\frmBenvinguda.Designer.cs">
+      <DependentUpon>frmBenvinguda.cs</DependentUpon>
+    </Compile>
     <Compile Include="CambioPassword\frmCambioPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,11 @@
     </Compile>
     <Compile Include="Login\GestorPasswords.cs" />
     <Compile Include="Login\UsuariosBD.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SplashScreen\frmSplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +102,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Benvinguda\frmBenvinguda.resx">
+      <DependentUpon>frmBenvinguda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CambioPassword\frmCambioPassword.resx">
       <DependentUpon>frmCambioPassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,14 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -130,6 +139,9 @@
     <Content Include="Resources\intro.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\mango_sable.jpg" />
+    <None Include="Resources\mango_sable1.png" />
+    <None Include="Resources\mango_sable.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

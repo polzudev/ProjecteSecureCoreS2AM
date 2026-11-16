@@ -98,9 +98,6 @@
     </Compile>
     <Compile Include="SplashScreen\SplashScreenAudioCode.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="SplashForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Benvinguda\frmBenvinguda.resx">
       <DependentUpon>frmBenvinguda.cs</DependentUpon>
@@ -136,9 +133,6 @@
     <None Include="Resources\logo_CommitJedi_fondo_transparente.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\intro.wav">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="Resources\mango_sable.jpg" />
     <None Include="Resources\mango_sable1.png" />
     <None Include="Resources\mango_sable.png" />

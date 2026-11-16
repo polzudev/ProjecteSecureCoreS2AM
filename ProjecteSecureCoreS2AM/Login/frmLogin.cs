@@ -89,7 +89,7 @@ namespace ProjecteSecureCoreS2AM
         private bool CambiarPasswordInicial(DataRow usuario)
         {
             bool cambiada = false;
-            using (frmCambioPassword frm = new frmCambioPassword())
+            using (frmCambioPassword frm = (frmCambioPassword)CreadorFormularios.Crear("ProjecteSecureCoreS2AM.frmCambioPassword"))
             {
                 if (frm.ShowDialog(this) == DialogResult.OK)
                 {
@@ -107,7 +107,7 @@ namespace ProjecteSecureCoreS2AM
             UsuarioValidado = usuario;
             DialogResult = DialogResult.OK;
             Hide();
-            using (frmBenvinguda benvinguda = new frmBenvinguda(usuario["UserName"].ToString(), usuario["DescCategory"].ToString()))
+            using (Form benvinguda = CreadorFormularios.Crear("ProjecteSecureCoreS2AM.Benvinguda.frmBenvinguda", usuario["UserName"].ToString(), usuario["DescCategory"].ToString()))
             {
                 benvinguda.ShowDialog();
             }

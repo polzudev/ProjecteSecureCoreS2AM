@@ -16,7 +16,7 @@ namespace ProjecteSecureCoreS2AM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmSplashScreen());
+            Application.Run(CreadorFormularios.Crear("ProjecteSecureCoreS2AM.frmSplashScreen"));
         }
     }
 }

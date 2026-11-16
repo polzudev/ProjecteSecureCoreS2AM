@@ -30,8 +30,11 @@ namespace ProjecteSecureCoreS2AM.Benvinguda
             {
                 progressBar1.PerformStep();
             }
-           
-
+            if (progressBar1.Value == progressBar1.Maximum)
+            {
+                timer1.Stop();
+                Close();
+            }
         }
 
         private void frmBenvinguda_Load(object sender, EventArgs e)

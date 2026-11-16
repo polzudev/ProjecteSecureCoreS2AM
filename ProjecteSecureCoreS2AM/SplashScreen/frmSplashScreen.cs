@@ -49,11 +49,11 @@ namespace ProjecteSecureCoreS2AM
             while (mostrarLogin)
             {
                 mostrarLogin = false;
-                using (frmLogin login = new frmLogin())
+                using (frmLogin login = (frmLogin)CreadorFormularios.Crear("ProjecteSecureCoreS2AM.frmLogin"))
                 {
                     if (login.ShowDialog() == DialogResult.OK)
                     {
-                        using (frmPrincipal principal = new frmPrincipal(login.UsuarioValidado))
+                        using (frmPrincipal principal = (frmPrincipal)CreadorFormularios.Crear("ProjecteSecureCoreS2AM.frmPrincipal", login.UsuarioValidado))
                         {
                             principal.ShowDialog();
                             mostrarLogin = principal.SesionCerrada;

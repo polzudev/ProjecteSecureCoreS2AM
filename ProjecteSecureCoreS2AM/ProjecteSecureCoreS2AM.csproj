@@ -77,6 +77,13 @@
     <Compile Include="CambioPassword\frmCambioPassword.Designer.cs">
       <DependentUpon>frmCambioPassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBase\AccesoDatos.cs" />
+    <Compile Include="FormBase\frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBase\frmBase.Designer.cs">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,11 +99,13 @@
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal\PrincipalBD.cs" />
+    <Compile Include="Reflection\CreadorFormularios.cs" />
     <Compile Include="SWLauchForm\SWLauchForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="SWLauchForm\SWLauchForm.Designer.cs">
       <DependentUpon>SWLauchForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -109,6 +118,10 @@
       <DependentUpon>frmSplashScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="SplashScreen\SplashScreenAudioCode.cs" />
+    <Compile Include="SWTextBox\SWTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SWTextBox\TipoDato.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Benvinguda\frmBenvinguda.resx">
@@ -116,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CambioPassword\frmCambioPassword.resx">
       <DependentUpon>frmCambioPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBase\frmBase.resx">
+      <DependentUpon>frmBase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -131,11 +147,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="SWLauchForm\SWLauchForm.resx">
       <DependentUpon>SWLauchForm.cs</DependentUpon>
     </EmbeddedResource>

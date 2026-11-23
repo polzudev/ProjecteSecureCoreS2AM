@@ -10,10 +10,16 @@ using System.Windows.Forms;
 
 namespace ProjecteSecureCoreS2AM
 {
+    /// <summary>
+    /// Pantalla de presentació (splash screen) que reprodueix un GIF animat amb àudio i,
+    /// en acabar, inicia el flux d'autenticació: mostra <c>frmLogin</c> i, si és correcte,
+    /// <c>frmPrincipal</c>. Si l'usuari tanca la sessió, el bucle torna a demanar credencials.
+    /// </summary>
     public partial class frmSplashScreen : Form
     {
         private SplashScreenAudioCode intro;
 
+        /// <summary>Inicialitza el formulari de presentació.</summary>
         public frmSplashScreen()
         {
             InitializeComponent();

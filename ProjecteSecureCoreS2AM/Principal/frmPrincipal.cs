@@ -7,6 +7,12 @@ using System.Windows.Forms;
 
 namespace ProjecteSecureCoreS2AM
 {
+    /// <summary>
+    /// Pantalla principal de l'aplicació. Mostra el perfil de l'usuari autenticat, les opcions
+    /// de menú disponibles segons el seu nivell d'accés i un rellotge en temps real.
+    /// Exposa <see cref="SesionCerrada"/> per indicar al flux de navegació si cal tornar a demanar
+    /// les credencials.
+    /// </summary>
     public partial class frmPrincipal : Form
     {
         private readonly PrincipalBD bd = new PrincipalBD();
@@ -16,8 +22,17 @@ namespace ProjecteSecureCoreS2AM
         private DataRow perfil;
         private int nivelAcceso;
 
+        /// <summary>
+        /// Indica si l'usuari ha tancat la sessió explícitament. <c>true</c> fa que el flux
+        /// de <c>frmSplashScreen</c> torni a mostrar la pantalla d'inici de sessió.
+        /// </summary>
         public bool SesionCerrada { get; private set; }
 
+        /// <summary>
+        /// Inicialitza la pantalla principal per a l'usuari autenticat.
+        /// </summary>
+        /// <param name="usuario">Fila de la base de dades retornada per <see cref="UsuariosBD.ObtenerUsuario"/>
+        /// amb, com a mínim, la columna <c>idUser</c>.</param>
         public frmPrincipal(DataRow usuario)
         {
             InitializeComponent();

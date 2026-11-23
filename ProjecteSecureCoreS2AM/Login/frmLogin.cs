@@ -4,12 +4,23 @@ using System.Windows.Forms;
 using ProjecteSecureCoreS2AM.Benvinguda;
 namespace ProjecteSecureCoreS2AM
 {
+    /// <summary>
+    /// Formulari d'inici de sessió. Valida les credencials de l'usuari contra la base de
+    /// dades, gestiona el primer accés (canvi de la paraula de pas inicial) i controla el
+    /// nombre d'intents fallits. En autenticar-se correctament, mostra la pantalla de
+    /// benvinguda i estableix <see cref="UsuarioValidado"/>.
+    /// </summary>
     public partial class frmLogin : Form
     {
         private readonly UsuariosBD bd = new UsuariosBD();
 
+        /// <summary>
+        /// Fila de la base de dades de l'usuari autenticat, disponible quan el diàleg es tanca
+        /// amb <see cref="System.Windows.Forms.DialogResult.OK"/>.
+        /// </summary>
         public DataRow UsuarioValidado { get; private set; }
         int intents = 0;
+        /// <summary>Inicialitza el formulari d'inici de sessió.</summary>
         public frmLogin()
         {
             InitializeComponent();

@@ -4,6 +4,10 @@ using System.Data.SqlClient;
 
 namespace ProjecteSecureCoreS2AM
 {
+    /// <summary>
+    /// Proporciona accés a les dades necessàries per a la pantalla principal: perfil de l'usuari
+    /// autenticat i opcions de menú filtrades pel seu nivell d'accés.
+    /// </summary>
     public class PrincipalBD
     {
         private string CadenaConexion
@@ -19,7 +23,14 @@ namespace ProjecteSecureCoreS2AM
             }
         }
 
-        // Datos del usuario con su categoría (nivel de acceso) y su rango
+        /// <summary>
+        /// Obté el perfil complet de l'usuari indicat, incloent categoria, nivell d'accés i rang.
+        /// </summary>
+        /// <param name="idUser">Identificador numèric de l'usuari.</param>
+        /// <returns>
+        /// <see cref="DataRow"/> amb les columnes idUser, CodeUser, UserName, Login,
+        /// CodeCategory, DescCategory, AccessLevel i DescRank, o <c>null</c> si no existeix.
+        /// </returns>
         public DataRow ObtenerPerfil(int idUser)
         {
             string query = "select u.idUser, u.CodeUser, u.UserName, u.Login, c.CodeCategory, c.DescCategory, c.AccessLevel, r.DescRank "
@@ -31,7 +42,15 @@ namespace ProjecteSecureCoreS2AM
             return perfiles.Rows.Count == 1 ? perfiles.Rows[0] : null;
         }
 
-        // Solo las opciones con nivel de acceso igual o menor al del usuario (control por elevación)
+        /// <summary>
+        /// Obté les opcions de menú disponibles per al nivell d'accés indicat, ordenades
+        /// alfabèticament per descripció.
+        /// </summary>
+        /// <param name="nivelAcceso">Nivell d'accés de l'usuari (columna <c>AccessLevel</c>).</param>
+        /// <returns>
+        /// <see cref="DataTable"/> amb les columnes idOption, description, image, formName,
+        /// tableName, rangeOption i namespace de les opcions amb <c>rangeOption &lt;= nivelAcceso</c>.
+        /// </returns>
         public DataTable ObtenerOpciones(int nivelAcceso)
         {
             string query = "select idOption, description, image, formName, tableName, rangeOption, namespace "

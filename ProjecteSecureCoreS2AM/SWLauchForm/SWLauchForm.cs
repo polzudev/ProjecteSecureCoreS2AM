@@ -9,12 +9,6 @@ using WinForm = System.Windows.Forms.Form;
 
 namespace ProjecteSecureCoreS2AM
 {
-    /// <summary>
-    /// Control d'usuari amb aparença de targeta que obre un formulari WinForms per reflexió en
-    /// fer-hi clic. Ressalta la vora i el text en daurat quan el cursor hi passa per sobre.
-    /// Les propietats <see cref="Classe"/>, <see cref="Form"/>, <see cref="Texto"/> i
-    /// <see cref="Imagen"/> es configuren des del dissenyador de formularis.
-    /// </summary>
     public partial class SWLauchForm : UserControl
     {
         private static readonly Color ColorBorde = Color.FromArgb(45, 62, 76);
@@ -22,7 +16,6 @@ namespace ProjecteSecureCoreS2AM
 
         private bool resaltado;
 
-        /// <summary>Inicialitza la targeta i registra els events de ratolí dels controls fills.</summary>
         public SWLauchForm()
         {
             InitializeComponent();
@@ -34,15 +27,12 @@ namespace ProjecteSecureCoreS2AM
             }
         }
 
-        /// <summary>Nom de la DLL (sense extensió) que conté el formulari. Buit per cercar dins el mateix executable.</summary>
         [Category("Secure Core"), Description("Nom de l'ensamblat (dll) que conté el formulari. Buit = aquest executable.")]
         public string Classe { get; set; }
 
-        /// <summary>Nom complet del formulari a obrir (namespace.NomClasse).</summary>
         [Category("Secure Core"), Description("Formulari a obrir en format namespace.NomClasse")]
         public string Form { get; set; }
 
-        /// <summary>Text descriptiu que es mostra a la part inferior de la targeta.</summary>
         [Category("Secure Core"), Description("Text que es mostra a la targeta")]
         public string Texto
         {
@@ -50,7 +40,6 @@ namespace ProjecteSecureCoreS2AM
             set { lblTexto.Text = value; }
         }
 
-        /// <summary>Imatge que es mostra a la part superior de la targeta.</summary>
         [Category("Secure Core"), Description("Imatge de la targeta")]
         public Image Imagen
         {
@@ -58,10 +47,6 @@ namespace ProjecteSecureCoreS2AM
             set { picIcono.Image = value; }
         }
 
-        /// <summary>
-        /// Obre el formulari configurat a <see cref="Form"/> per reflexió.
-        /// Si el tipus no es troba, mostra un missatge informatiu.
-        /// </summary>
         public void Ejecutar()
         {
             try
@@ -85,7 +70,6 @@ namespace ProjecteSecureCoreS2AM
             }
         }
 
-        // Si existe la dll indicada en Classe se busca allí; si no, en este mismo ejecutable
         private Type ObtenerTipo()
         {
             Type tipo = null;
@@ -101,7 +85,6 @@ namespace ProjecteSecureCoreS2AM
                 tipo = ensamblado.GetType(Form);
                 if (tipo == null)
                 {
-                    // Por si el namespace no coincide: se busca solo por el nombre de la clase
                     string nombreClase = Form.Substring(Form.LastIndexOf('.') + 1);
                     tipo = ensamblado.GetTypes().FirstOrDefault(t => t.Name == nombreClase);
                 }
@@ -114,28 +97,24 @@ namespace ProjecteSecureCoreS2AM
             return tipo;
         }
 
-        /// <inheritdoc/>
         protected override void OnClick(EventArgs e)
         {
             base.OnClick(e);
             Ejecutar();
         }
 
-        /// <inheritdoc/>
         protected override void OnMouseEnter(EventArgs e)
         {
             base.OnMouseEnter(e);
             Resaltar(true);
         }
 
-        /// <inheritdoc/>
         protected override void OnMouseLeave(EventArgs e)
         {
             base.OnMouseLeave(e);
             Resaltar(RatonDentro());
         }
 
-        /// <inheritdoc/>
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
@@ -177,7 +156,6 @@ namespace ProjecteSecureCoreS2AM
 
         private void picIcono_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

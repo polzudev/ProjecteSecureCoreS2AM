@@ -9,7 +9,6 @@ using WinForm = System.Windows.Forms.Form;
 
 namespace ProjecteSecureCoreS2AM
 {
-    // Botón-tarjeta que abre un formulario por reflection
     public partial class SWLauchForm : UserControl
     {
         private static readonly Color ColorBorde = Color.FromArgb(45, 62, 76);
@@ -71,7 +70,6 @@ namespace ProjecteSecureCoreS2AM
             }
         }
 
-        // Si existe la dll indicada en Classe se busca allí; si no, en este mismo ejecutable
         private Type ObtenerTipo()
         {
             Type tipo = null;
@@ -87,7 +85,6 @@ namespace ProjecteSecureCoreS2AM
                 tipo = ensamblado.GetType(Form);
                 if (tipo == null)
                 {
-                    // Por si el namespace no coincide: se busca solo por el nombre de la clase
                     string nombreClase = Form.Substring(Form.LastIndexOf('.') + 1);
                     tipo = ensamblado.GetTypes().FirstOrDefault(t => t.Name == nombreClase);
                 }
@@ -159,7 +156,6 @@ namespace ProjecteSecureCoreS2AM
 
         private void picIcono_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

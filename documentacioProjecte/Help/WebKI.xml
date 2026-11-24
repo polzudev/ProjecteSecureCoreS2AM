@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="ABytes method" Url="html/1991405c-091f-ba8e-6ca6-651e5d88c073.htm" />
+  <HelpKINode Title="AccesoDatos class">
+    <HelpKINode Title="AccesoDatos Class" Url="html/09725dc8-72d2-be74-1d74-b68d8b5be429.htm" />
+    <HelpKINode Title="constructor" Url="html/596ddc37-0f4e-51d4-493a-47f9c27b8520.htm" />
+    <HelpKINode Title="methods" Url="html/622f1e59-a242-502f-4489-82bd532c1913.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AccesoDatos.AccesoDatos constructor" Url="html/596ddc37-0f4e-51d4-493a-47f9c27b8520.htm" />
+  <HelpKINode Title="AccesoDatos.Actualitzar method" Url="html/ed480453-4204-6018-89d1-8b528e1d7d38.htm" />
+  <HelpKINode Title="AccesoDatos.AfegirDataTable method" Url="html/d07a221c-5566-386e-f9c6-462a5dee2f70.htm" />
+  <HelpKINode Title="AccesoDatos.Executa method" Url="html/49c6925c-7573-5346-0cea-04075437a08a.htm" />
+  <HelpKINode Title="AccesoDatos.PortarDataTable method" Url="html/432aad5f-69ee-af0b-79bc-bd79d30dadab.htm" />
+  <HelpKINode Title="AccesoDatos.PortarPerConsulta method" Url="html/1b28e024-0ff7-56cf-b136-4a1bd9c84e56.htm" />
+  <HelpKINode Title="AccesoDatos.PortarTaula method" Url="html/1d950983-c015-a236-d342-9079a0748c02.htm" />
+  <HelpKINode Title="Actualitzar method" Url="html/ed480453-4204-6018-89d1-8b528e1d7d38.htm" />
+  <HelpKINode Title="AfegirDataTable method" Url="html/d07a221c-5566-386e-f9c6-462a5dee2f70.htm" />
+  <HelpKINode Title="ATexto method" Url="html/744ba7fa-1d24-2cde-e339-51678689bc62.htm" />
+  <HelpKINode Title="CalcularHash method" Url="html/bbd75290-e750-c3cb-e041-c2df32ac7e4d.htm" />
+  <HelpKINode Title="CampoBD property" Url="html/5247195e-4a52-e85c-cbea-18b859aded7a.htm" />
+  <HelpKINode Title="Classe property" Url="html/7805f682-1a95-1b18-a85a-dd84afa2c097.htm" />
+  <HelpKINode Title="Codigo enumeration member" Url="html/d6da2d2f-b8b6-e243-d180-253ea9d9727f.htm" />
+  <HelpKINode Title="ColorFoco property" Url="html/1f13eeab-8583-0adc-baa7-e59d816b6b99.htm" />
+  <HelpKINode Title="ConfigurarDGV method" Url="html/1d35f550-6aa4-a075-be90-bbb88613e939.htm" />
+  <HelpKINode Title="CreadorFormularios class">
+    <HelpKINode Title="CreadorFormularios Class" Url="html/86671b2c-62da-3100-858d-779fe49cd2ce.htm" />
+    <HelpKINode Title="methods" Url="html/ca96d3ab-dcf4-7c46-3627-0df52a264d49.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreadorFormularios.Crear method" Url="html/4e63421d-e8b7-65e0-797d-bb8a8226f613.htm" />
+  <HelpKINode Title="Crear method" Url="html/4e63421d-e8b7-65e0-797d-bb8a8226f613.htm" />
+  <HelpKINode Title="dgvDatos field" Url="html/74d8dfe4-848b-6b35-6ef8-db3b0e8b5845.htm" />
+  <HelpKINode Title="Dispose method">
+    <HelpKINode Title="frmBase.Dispose Method " Url="html/754fce6e-0615-40c6-76e0-0a5483b0c96c.htm" />
+    <HelpKINode Title="frmBenvinguda.Dispose Method " Url="html/8a09fa74-c3e9-281d-c891-e16090ece350.htm" />
+    <HelpKINode Title="frmCambioPassword.Dispose Method " Url="html/b4d31613-f459-3f65-d15a-96ff4d8bebaa.htm" />
+    <HelpKINode Title="frmLogin.Dispose Method " Url="html/f768e319-8e61-e3b2-cff1-0294695c114a.htm" />
+    <HelpKINode Title="frmPrincipal.Dispose Method " Url="html/a96d5189-1528-8618-11c5-2dc5f162c372.htm" />
+    <HelpKINode Title="frmSplashScreen.Dispose Method " Url="html/845c8ada-3b0b-ee72-9248-2e805cc69fb3.htm" />
+    <HelpKINode Title="SplashScreenAudioCode.Dispose Method " Url="html/f88d2091-a7e8-368f-0f20-01d7acd160bc.htm" />
+    <HelpKINode Title="SWLauchForm.Dispose Method " Url="html/014a83ed-3904-eeaa-e792-a2bc10e9b637.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Ejecutar method" Url="html/7b836f0d-fad5-9a58-1696-31f9db074767.htm" />
+  <HelpKINode Title="EsClaveForanea property" Url="html/da7fe38c-ff5c-df99-fa68-1e3373d18b6f.htm" />
+  <HelpKINode Title="Executa method" Url="html/49c6925c-7573-5346-0cea-04075437a08a.htm" />
+  <HelpKINode Title="Form property" Url="html/905405d3-95f9-c068-3b14-4d746b65862e.htm" />
+  <HelpKINode Title="frmBase class">
+    <HelpKINode Title="frmBase Class" Url="html/a3c2cc74-847a-6302-a735-463c040f72d8.htm" />
+    <HelpKINode Title="constructor" Url="html/e8e7c3b3-0e2c-1b9a-0def-58b2aec10b2e.htm" />
+    <HelpKINode Title="events" Url="html/8fe6b3c8-d21a-d1e6-ee30-d0eebc8439a8.htm" />
+    <HelpKINode Title="fields" Url="html/e7b7bec5-a834-55a8-240c-af02f3c80fa3.htm" />
+    <HelpKINode Title="methods" Url="html/64de566e-5d98-7f40-7324-af5420a12d46.htm" />
+    <HelpKINode Title="properties" Url="html/2ba9fdc3-b82f-72cb-a1b4-48c6ba8c6fad.htm" />
+  </HelpKINode>
+  <HelpKINode Title="frmBase.ConfigurarDGV method" Url="html/1d35f550-6aa4-a075-be90-bbb88613e939.htm" />
+  <HelpKINode Title="frmBase.dgvDatos field" Url="html/74d8dfe4-848b-6b35-6ef8-db3b0e8b5845.htm" />
+  <HelpKINode Title="frmBase.Dispose method" Url="html/754fce6e-0615-40c6-76e0-0a5483b0c96c.htm" />
+  <HelpKINode Title="frmBase.frmBase constructor" Url="html/e8e7c3b3-0e2c-1b9a-0def-58b2aec10b2e.htm" />
+  <HelpKINode Title="frmBase.Tabla property" Url="html/2c7f045b-a234-a63a-02fb-f4217643b1b8.htm" />
+  <HelpKINode Title="frmBenvinguda class">
+    <HelpKINode Title="frmBenvinguda Class" Url="html/c70350d8-b4dc-07ea-8320-e53852f9fc9a.htm" />
+    <HelpKINode Title="constructor" Url="html/93e1165f-9cfe-0702-c582-04f73464ceaa.htm" />
+    <HelpKINode Title="events" Url="html/9bae17ce-a2b9-58b3-8599-e1e1bfa560fe.htm" />
+    <HelpKINode Title="methods" Url="html/14bc32c2-255c-a812-36d8-e20c7d67533e.htm" />
+    <HelpKINode Title="properties" Url="html/25ca07a8-4ff9-c3f8-cff2-f3fcd9e9951e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="frmBenvinguda.Dispose method" Url="html/8a09fa74-c3e9-281d-c891-e16090ece350.htm" />
+  <HelpKINode Title="frmBenvinguda.frmBenvinguda constructor" Url="html/93e1165f-9cfe-0702-c582-04f73464ceaa.htm" />
+  <HelpKINode Title="frmCambioPassword class">
+    <HelpKINode Title="frmCambioPassword Class" Url="html/6906e16c-55c8-2fa6-59c7-a7dc5952fc56.htm" />
+    <HelpKINode Title="constructor" Url="html/4f6bbcce-c6fa-c74b-8ae3-e51ad4af0332.htm" />
+    <HelpKINode Title="events" Url="html/577123a3-c4ef-ac4b-bd8e-9f7b9e94151c.htm" />
+    <HelpKINode Title="methods" Url="html/62b89e28-0dbe-eaf6-cad9-9cb1cd0792e3.htm" />
+    <HelpKINode Title="properties" Url="html/f23d2988-211f-fe16-b370-0d1fad16229f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="frmCambioPassword.Dispose method" Url="html/b4d31613-f459-3f65-d15a-96ff4d8bebaa.htm" />
+  <HelpKINode Title="frmCambioPassword.frmCambioPassword constructor" Url="html/4f6bbcce-c6fa-c74b-8ae3-e51ad4af0332.htm" />
+  <HelpKINode Title="frmCambioPassword.NuevaPassword property" Url="html/fa815c0a-8732-1b83-0fcc-9fb687947e83.htm" />
+  <HelpKINode Title="frmLogin class">
+    <HelpKINode Title="frmLogin Class" Url="html/bd125c7b-5b16-e9c4-9deb-a63e324fa33c.htm" />
+    <HelpKINode Title="constructor" Url="html/a73c9bc6-7bc8-0b9f-8f98-21deedb313af.htm" />
+    <HelpKINode Title="events" Url="html/0d5e767d-0eab-8dfe-01ef-cde9dbd241a9.htm" />
+    <HelpKINode Title="methods" Url="html/234e8e15-48df-20f4-c04c-93620ee8480b.htm" />
+    <HelpKINode Title="properties" Url="html/0a7d9a82-01d2-82c7-b153-858e15c37374.htm" />
+  </HelpKINode>
+  <HelpKINode Title="frmLogin.Dispose method" Url="html/f768e319-8e61-e3b2-cff1-0294695c114a.htm" />
+  <HelpKINode Title="frmLogin.frmLogin constructor" Url="html/a73c9bc6-7bc8-0b9f-8f98-21deedb313af.htm" />
+  <HelpKINode Title="frmLogin.UsuarioValidado property" Url="html/f80dd525-ae67-3f10-0912-19d9d892a791.htm" />
+  <HelpKINode Title="frmPrincipal class">
+    <HelpKINode Title="frmPrincipal Class" Url="html/618e6d0e-dd20-b04d-e592-6160f6bdb498.htm" />
+    <HelpKINode Title="constructor" Url="html/16308170-75e0-7874-d7d9-b445eae7c445.htm" />
+    <HelpKINode Title="events" Url="html/02799e6d-5f99-834a-0635-9630f851d49e.htm" />
+    <HelpKINode Title="methods" Url="html/1781a6ec-9d23-92bf-ac25-6c90fecf2188.htm" />
+    <HelpKINode Title="properties" Url="html/6c81a81e-2d05-9597-1130-7845a4c0be23.htm" />
+  </HelpKINode>
+  <HelpKINode Title="frmPrincipal.Dispose method" Url="html/a96d5189-1528-8618-11c5-2dc5f162c372.htm" />
+  <HelpKINode Title="frmPrincipal.frmPrincipal constructor" Url="html/16308170-75e0-7874-d7d9-b445eae7c445.htm" />
+  <HelpKINode Title="frmPrincipal.SesionCerrada property" Url="html/7e19949d-feef-a38a-d75c-264e6b57878d.htm" />
+  <HelpKINode Title="frmSplashScreen class">
+    <HelpKINode Title="frmSplashScreen Class" Url="html/23bd8f70-af95-f4c9-5606-3f773b15b3b7.htm" />
+    <HelpKINode Title="constructor" Url="html/7cb6d3c2-a476-bfbf-978f-4e2f2dc74f29.htm" />
+    <HelpKINode Title="events" Url="html/4642c6c9-1914-093c-fbe0-edfca838a4c1.htm" />
+    <HelpKINode Title="methods" Url="html/934d42a4-fd95-40c4-ceb2-846bbea37529.htm" />
+    <HelpKINode Title="properties" Url="html/8223650d-c23e-f628-c4bd-cbda008dc4a9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="frmSplashScreen.Dispose method" Url="html/845c8ada-3b0b-ee72-9248-2e805cc69fb3.htm" />
+  <HelpKINode Title="frmSplashScreen.frmSplashScreen constructor" Url="html/7cb6d3c2-a476-bfbf-978f-4e2f2dc74f29.htm" />
+  <HelpKINode Title="GenerarSalt method" Url="html/eda2f07b-1067-60fc-e93a-7a5c0da6c58c.htm" />
+  <HelpKINode Title="GestorPasswords class">
+    <HelpKINode Title="GestorPasswords Class" Url="html/f16c7156-dd46-beb8-3a6e-c9a209d6d1c4.htm" />
+    <HelpKINode Title="fields" Url="html/425e1fe0-70f8-f86e-073b-9a249688c7a4.htm" />
+    <HelpKINode Title="methods" Url="html/bbc00f45-7df7-9275-c3e6-fdce6bbe593c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GestorPasswords.ABytes method" Url="html/1991405c-091f-ba8e-6ca6-651e5d88c073.htm" />
+  <HelpKINode Title="GestorPasswords.ATexto method" Url="html/744ba7fa-1d24-2cde-e339-51678689bc62.htm" />
+  <HelpKINode Title="GestorPasswords.CalcularHash method" Url="html/bbd75290-e750-c3cb-e041-c2df32ac7e4d.htm" />
+  <HelpKINode Title="GestorPasswords.GenerarSalt method" Url="html/eda2f07b-1067-60fc-e93a-7a5c0da6c58c.htm" />
+  <HelpKINode Title="GestorPasswords.LongitudMinima field" Url="html/5725425e-338e-890a-4c32-083762f92e4f.htm" />
+  <HelpKINode Title="GestorPasswords.PasswordInicial field" Url="html/fdcf0ad7-31f1-38ae-daa1-3e20022caaad.htm" />
+  <HelpKINode Title="GestorPasswords.RequisitosIncumplidos method" Url="html/3cfdbdbb-1a8c-b676-8ad6-b302b623ed58.htm" />
+  <HelpKINode Title="GestorPasswords.VerificarPassword method" Url="html/99376d09-122e-509a-451c-d4b6ade16d1b.htm" />
+  <HelpKINode Title="GuardarPassword method" Url="html/1e0bedc6-fd2f-b40c-8f07-858f8ec9f99e.htm" />
+  <HelpKINode Title="Imagen property" Url="html/bd9ff03c-61c1-0676-ca0b-e41fac5b1dbb.htm" />
+  <HelpKINode Title="Iniciar method" Url="html/5848992a-6bfe-8b23-5cef-9a7bde423394.htm" />
+  <HelpKINode Title="LongitudMinima field" Url="html/5725425e-338e-890a-4c32-083762f92e4f.htm" />
+  <HelpKINode Title="NuevaPassword property" Url="html/fa815c0a-8732-1b83-0fcc-9fb687947e83.htm" />
+  <HelpKINode Title="Numero enumeration member" Url="html/d6da2d2f-b8b6-e243-d180-253ea9d9727f.htm" />
+  <HelpKINode Title="ObtenerOpciones method" Url="html/cf3ad9b4-7bf1-afa0-07a9-b56f99e8372d.htm" />
+  <HelpKINode Title="ObtenerPerfil method" Url="html/368d5048-e276-b583-75a5-30e9afc20ed6.htm" />
+  <HelpKINode Title="ObtenerUsuario method" Url="html/ee99554b-3440-aa9b-1d34-2e46933923c7.htm" />
+  <HelpKINode Title="OnClick method" Url="html/8ebde736-f09e-7374-8560-b21e4fdd0f1c.htm" />
+  <HelpKINode Title="OnEnter method" Url="html/7c189dc4-3fac-7058-3731-bbfd571bf6e1.htm" />
+  <HelpKINode Title="OnLeave method" Url="html/60fa0f9b-8258-d4ed-7845-edfd9d8555ae.htm" />
+  <HelpKINode Title="OnMouseEnter method" Url="html/298784ef-9a27-cf1d-4d79-c5b59883a7fb.htm" />
+  <HelpKINode Title="OnMouseLeave method" Url="html/2640cf89-53f4-3b78-ef96-e939d772164f.htm" />
+  <HelpKINode Title="OnPaint method" Url="html/5424ad2a-5ba8-3649-fb8b-71f2bf95bca9.htm" />
+  <HelpKINode Title="PasswordInicial field" Url="html/fdcf0ad7-31f1-38ae-daa1-3e20022caaad.htm" />
+  <HelpKINode Title="PortarDataTable method" Url="html/432aad5f-69ee-af0b-79bc-bd79d30dadab.htm" />
+  <HelpKINode Title="PortarPerConsulta method" Url="html/1b28e024-0ff7-56cf-b136-4a1bd9c84e56.htm" />
+  <HelpKINode Title="PortarTaula method" Url="html/1d950983-c015-a236-d342-9079a0748c02.htm" />
+  <HelpKINode Title="PrincipalBD class">
+    <HelpKINode Title="PrincipalBD Class" Url="html/3f23563a-c741-f2a4-e235-6f3ab1cede7e.htm" />
+    <HelpKINode Title="constructor" Url="html/50c4ab0e-63ab-932e-0c1b-7ea535d3c0da.htm" />
+    <HelpKINode Title="methods" Url="html/1ae413cf-7547-c8c7-fe63-bed95ca446d6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PrincipalBD.ObtenerOpciones method" Url="html/cf3ad9b4-7bf1-afa0-07a9-b56f99e8372d.htm" />
+  <HelpKINode Title="PrincipalBD.ObtenerPerfil method" Url="html/368d5048-e276-b583-75a5-30e9afc20ed6.htm" />
+  <HelpKINode Title="PrincipalBD.PrincipalBD constructor" Url="html/50c4ab0e-63ab-932e-0c1b-7ea535d3c0da.htm" />
+  <HelpKINode Title="ProjecteSecureCoreS2AM namespace" Url="html/f1713d4e-85e7-4df6-5779-9b2142bb3ed6.htm" />
+  <HelpKINode Title="ProjecteSecureCoreS2AM.AccesoDatos class" Url="html/09725dc8-72d2-be74-1d74-b68d8b5be429.htm" />
+  <HelpKINode Title="ProjecteSecureCoreS2AM.Benvinguda namespace" Url="html/0c74b6df-4d92-9603-2774-5544222ea218.htm" />
+  <HelpKINode Title="ProjecteSecureCoreS2AM.Benvinguda.frmBenvinguda class" Url="html/c70350d8-b4dc-07ea-8320-e53852f9fc9a.htm" />
+  <HelpKINode Title="ProjecteSecureCoreS2AM.CreadorFormularios class" Url="html/86671b2c-62da-3100-858d-779fe49cd2ce.htm" />
+  <HelpKINode Title="ProjecteSecureCoreS2AM.frmBase class" Url="html/a3c2cc74-847a-6302-a735-463c040f72d8.htm" />
+  <HelpKINode Title="ProjecteSecureCoreS2AM.frmCambioPassword class" Url="html/6906e16c-55c8-2fa6-59c7-a7dc5952fc56.htm" />
+  <HelpKINode Title="ProjecteSecureCoreS2AM.frmLogin class" Url="html/bd125c7b-5b16-e9c4-9deb-a63e324fa33c.htm" />
+  <HelpKINode Title="ProjecteSecureCoreS2AM.frmPrincipal class" Url="html/618e6d0e-dd20-b04d-e592-6160f6bdb498.htm" />
+  <HelpKINode Title="ProjecteSecureCoreS2AM.frmSplashScreen class" Url="html/23bd8f70-af95-f4c9-5606-3f773b15b3b7.htm" />
+  <HelpKINode Title="ProjecteSecureCoreS2AM.GestorPasswords class" Url="html/f16c7156-dd46-beb8-3a6e-c9a209d6d1c4.htm" />
+  <HelpKINode Title="ProjecteSecureCoreS2AM.PrincipalBD class" Url="html/3f23563a-c741-f2a4-e235-6f3ab1cede7e.htm" />
+  <HelpKINode Title="ProjecteSecureCoreS2AM.SplashScreenAudioCode class" Url="html/cd6a4fcb-65eb-1b9e-d416-47eb82a8b8bb.htm" />
+  <HelpKINode Title="ProjecteSecureCoreS2AM.SWLauchForm class" Url="html/ee361e79-187a-372b-00c9-8caacaf1be2a.htm" />
+  <HelpKINode Title="ProjecteSecureCoreS2AM.SWTextBox class" Url="html/27d685e4-960f-0878-2be3-45f6817a996c.htm" />
+  <HelpKINode Title="ProjecteSecureCoreS2AM.TipoDato enumeration" Url="html/d6da2d2f-b8b6-e243-d180-253ea9d9727f.htm" />
+  <HelpKINode Title="ProjecteSecureCoreS2AM.UsuariosBD class" Url="html/e4ed356a-b258-cdb5-9272-e1365a5ddaa2.htm" />
+  <HelpKINode Title="PuedeEstarVacio property" Url="html/b37638db-b7da-ab4b-1681-8ab3fa970944.htm" />
+  <HelpKINode Title="RequisitosIncumplidos method" Url="html/3cfdbdbb-1a8c-b676-8ad6-b302b623ed58.htm" />
+  <HelpKINode Title="SesionCerrada property" Url="html/7e19949d-feef-a38a-d75c-264e6b57878d.htm" />
+  <HelpKINode Title="SplashScreenAudioCode class">
+    <HelpKINode Title="SplashScreenAudioCode Class" Url="html/cd6a4fcb-65eb-1b9e-d416-47eb82a8b8bb.htm" />
+    <HelpKINode Title="constructor" Url="html/50b851af-f440-5d31-34d0-b4c1bb15281a.htm" />
+    <HelpKINode Title="methods" Url="html/555be28d-c3fc-83d1-7e0d-a2af6329856c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SplashScreenAudioCode.Dispose method" Url="html/f88d2091-a7e8-368f-0f20-01d7acd160bc.htm" />
+  <HelpKINode Title="SplashScreenAudioCode.Iniciar method" Url="html/5848992a-6bfe-8b23-5cef-9a7bde423394.htm" />
+  <HelpKINode Title="SplashScreenAudioCode.SplashScreenAudioCode constructor" Url="html/50b851af-f440-5d31-34d0-b4c1bb15281a.htm" />
+  <HelpKINode Title="SWLauchForm class">
+    <HelpKINode Title="SWLauchForm Class" Url="html/ee361e79-187a-372b-00c9-8caacaf1be2a.htm" />
+    <HelpKINode Title="constructor" Url="html/78bca6c7-a7b2-5b5a-460f-ad10b03af187.htm" />
+    <HelpKINode Title="events" Url="html/8ad92f68-ea3c-bade-0f33-1d4d0282372a.htm" />
+    <HelpKINode Title="methods" Url="html/e2f8adcb-7e56-3071-9cb9-2f81d252ac86.htm" />
+    <HelpKINode Title="properties" Url="html/e31af329-3037-2d8d-36ef-17c278d28051.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SWLauchForm.Classe property" Url="html/7805f682-1a95-1b18-a85a-dd84afa2c097.htm" />
+  <HelpKINode Title="SWLauchForm.Dispose method" Url="html/014a83ed-3904-eeaa-e792-a2bc10e9b637.htm" />
+  <HelpKINode Title="SWLauchForm.Ejecutar method" Url="html/7b836f0d-fad5-9a58-1696-31f9db074767.htm" />
+  <HelpKINode Title="SWLauchForm.Form property" Url="html/905405d3-95f9-c068-3b14-4d746b65862e.htm" />
+  <HelpKINode Title="SWLauchForm.Imagen property" Url="html/bd9ff03c-61c1-0676-ca0b-e41fac5b1dbb.htm" />
+  <HelpKINode Title="SWLauchForm.OnClick method" Url="html/8ebde736-f09e-7374-8560-b21e4fdd0f1c.htm" />
+  <HelpKINode Title="SWLauchForm.OnMouseEnter method" Url="html/298784ef-9a27-cf1d-4d79-c5b59883a7fb.htm" />
+  <HelpKINode Title="SWLauchForm.OnMouseLeave method" Url="html/2640cf89-53f4-3b78-ef96-e939d772164f.htm" />
+  <HelpKINode Title="SWLauchForm.OnPaint method" Url="html/5424ad2a-5ba8-3649-fb8b-71f2bf95bca9.htm" />
+  <HelpKINode Title="SWLauchForm.SWLauchForm constructor" Url="html/78bca6c7-a7b2-5b5a-460f-ad10b03af187.htm" />
+  <HelpKINode Title="SWLauchForm.Texto property" Url="html/82117c1f-1eec-10fe-127e-23faa443ee60.htm" />
+  <HelpKINode Title="SWTextBox class">
+    <HelpKINode Title="SWTextBox Class" Url="html/27d685e4-960f-0878-2be3-45f6817a996c.htm" />
+    <HelpKINode Title="constructor" Url="html/79dd72d7-e68e-9678-0e1e-35cd6936a60b.htm" />
+    <HelpKINode Title="events" Url="html/fb2fbb5a-816b-d7db-2f50-d089adbbb6b5.htm" />
+    <HelpKINode Title="methods" Url="html/bdb425b0-354f-705d-ed77-3b5df0aac975.htm" />
+    <HelpKINode Title="properties" Url="html/5e9b8549-6bfd-2be4-9af8-b79af6e862a8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SWTextBox.CampoBD property" Url="html/5247195e-4a52-e85c-cbea-18b859aded7a.htm" />
+  <HelpKINode Title="SWTextBox.ColorFoco property" Url="html/1f13eeab-8583-0adc-baa7-e59d816b6b99.htm" />
+  <HelpKINode Title="SWTextBox.EsClaveForanea property" Url="html/da7fe38c-ff5c-df99-fa68-1e3373d18b6f.htm" />
+  <HelpKINode Title="SWTextBox.OnEnter method" Url="html/7c189dc4-3fac-7058-3731-bbfd571bf6e1.htm" />
+  <HelpKINode Title="SWTextBox.OnLeave method" Url="html/60fa0f9b-8258-d4ed-7845-edfd9d8555ae.htm" />
+  <HelpKINode Title="SWTextBox.PuedeEstarVacio property" Url="html/b37638db-b7da-ab4b-1681-8ab3fa970944.htm" />
+  <HelpKINode Title="SWTextBox.SWTextBox constructor" Url="html/79dd72d7-e68e-9678-0e1e-35cd6936a60b.htm" />
+  <HelpKINode Title="SWTextBox.Tipo property" Url="html/8b7bc921-7f4b-9b75-ce00-f12e46e3b17e.htm" />
+  <HelpKINode Title="SWTextBox.ValidateData method" Url="html/e8ff9ee5-7bbd-14a7-5031-95e6cae9be02.htm" />
+  <HelpKINode Title="Tabla property" Url="html/2c7f045b-a234-a63a-02fb-f4217643b1b8.htm" />
+  <HelpKINode Title="Texto enumeration member" Url="html/d6da2d2f-b8b6-e243-d180-253ea9d9727f.htm" />
+  <HelpKINode Title="Texto property" Url="html/82117c1f-1eec-10fe-127e-23faa443ee60.htm" />
+  <HelpKINode Title="Tipo property" Url="html/8b7bc921-7f4b-9b75-ce00-f12e46e3b17e.htm" />
+  <HelpKINode Title="TipoDato enumeration" Url="html/d6da2d2f-b8b6-e243-d180-253ea9d9727f.htm" />
+  <HelpKINode Title="UsuariosBD class">
+    <HelpKINode Title="UsuariosBD Class" Url="html/e4ed356a-b258-cdb5-9272-e1365a5ddaa2.htm" />
+    <HelpKINode Title="constructor" Url="html/594b53a4-52ec-e3d4-0026-c684c523ac43.htm" />
+    <HelpKINode Title="methods" Url="html/5dfd637c-3fdf-2452-7bdf-797a4eea84cb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UsuariosBD.GuardarPassword method" Url="html/1e0bedc6-fd2f-b40c-8f07-858f8ec9f99e.htm" />
+  <HelpKINode Title="UsuariosBD.ObtenerUsuario method" Url="html/ee99554b-3440-aa9b-1d34-2e46933923c7.htm" />
+  <HelpKINode Title="UsuariosBD.UsuariosBD constructor" Url="html/594b53a4-52ec-e3d4-0026-c684c523ac43.htm" />
+  <HelpKINode Title="UsuarioValidado property" Url="html/f80dd525-ae67-3f10-0912-19d9d892a791.htm" />
+  <HelpKINode Title="ValidateData method" Url="html/e8ff9ee5-7bbd-14a7-5031-95e6cae9be02.htm" />
+  <HelpKINode Title="VerificarPassword method" Url="html/99376d09-122e-509a-451c-d4b6ade16d1b.htm" />
+  <HelpKINode Title="version">
+    <HelpKINode Title="1.0.0.0" Url="html/3ffc535e-4a3e-4613-ac27-f28d6aa07b74.htm" />
+    <HelpKINode Title="history" Url="html/8aed56fc-fede-4028-bb7f-5d49c9ce3a4e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Welcome" Url="html/167e8807-51a3-4656-bde0-20f8966690ff.htm" />
+</HelpKI>

@@ -8,6 +8,7 @@ namespace ProjecteSecureCoreS2AM
     public static class GestorPasswords
     {
         public const string PasswordInicial = "12345aA";
+
         public const int LongitudMinima = 8;
 
         private const int SaltByteSize = 24;

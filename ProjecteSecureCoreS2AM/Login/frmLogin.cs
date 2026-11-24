@@ -9,7 +9,7 @@ namespace ProjecteSecureCoreS2AM
         private readonly UsuariosBD bd = new UsuariosBD();
 
         public DataRow UsuarioValidado { get; private set; }
-
+        int intents = 0;
         public frmLogin()
         {
             InitializeComponent();
@@ -53,7 +53,9 @@ namespace ProjecteSecureCoreS2AM
                 }
                 else
                 {
+                    intents++;
                     lblMensaje.Text = "Identificador o paraula de pas incorrectes.";
+                    controlIntents(intents);
                     txtPassword.Clear();
                     txtPassword.Focus();
                 }
@@ -109,7 +111,6 @@ namespace ProjecteSecureCoreS2AM
                 benvinguda.ShowDialog();
             }
             Close();
-
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -118,5 +119,13 @@ namespace ProjecteSecureCoreS2AM
         }
 
         private void frmLogin_Load(object sender, EventArgs e) { }
+
+        private void controlIntents(int intents)
+        {
+            if (intents >= 3)
+            {
+                MessageBox.Show("Numero D'intents " + intents + " Compte, Intent d'Intrusió!");
+            }
+        }
     }
 }

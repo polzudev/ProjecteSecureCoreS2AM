@@ -19,7 +19,6 @@ namespace ProjecteSecureCoreS2AM
             }
         }
 
-        // Datos del usuario con su categoría (nivel de acceso) y su rango
         public DataRow ObtenerPerfil(int idUser)
         {
             string query = "select u.idUser, u.CodeUser, u.UserName, u.Login, c.CodeCategory, c.DescCategory, c.AccessLevel, r.DescRank "
@@ -31,7 +30,6 @@ namespace ProjecteSecureCoreS2AM
             return perfiles.Rows.Count == 1 ? perfiles.Rows[0] : null;
         }
 
-        // Solo las opciones con nivel de acceso igual o menor al del usuario (control por elevación)
         public DataTable ObtenerOpciones(int nivelAcceso)
         {
             string query = "select idOption, description, image, formName, tableName, rangeOption, namespace "

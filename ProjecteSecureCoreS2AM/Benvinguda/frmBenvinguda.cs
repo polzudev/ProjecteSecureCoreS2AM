@@ -13,8 +13,6 @@ namespace ProjecteSecureCoreS2AM.Benvinguda
 {
     public partial class frmBenvinguda : Form
     {
-       
-
         public frmBenvinguda(string nomUsuari, string descCategoria)
         {
             InitializeComponent();
@@ -39,13 +37,11 @@ namespace ProjecteSecureCoreS2AM.Benvinguda
 
         private void frmBenvinguda_Load(object sender, EventArgs e)
         {
-          
             timer1.Start();
         }
 
         private void lblUsuari_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

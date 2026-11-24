@@ -25,8 +25,6 @@ namespace ProjecteSecureCoreS2AM
             CenterToScreen();
 
             timer1.Start();
-
-
         }
 
         private void frmSplashScreen_Shown(object sender, EventArgs e)
@@ -44,7 +42,6 @@ namespace ProjecteSecureCoreS2AM
         {
             timer1.Stop();
             Hide();
-            // Login -> pantalla principal. Si el usuario cierra sesión se vuelve a pedir el login
             bool mostrarLogin = true;
             while (mostrarLogin)
             {
@@ -66,7 +63,6 @@ namespace ProjecteSecureCoreS2AM
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

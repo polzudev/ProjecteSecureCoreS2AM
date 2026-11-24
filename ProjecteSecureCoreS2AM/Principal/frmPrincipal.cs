@@ -156,12 +156,10 @@ namespace ProjecteSecureCoreS2AM
 
         private void pnlCabecera_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void lblSeccion_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

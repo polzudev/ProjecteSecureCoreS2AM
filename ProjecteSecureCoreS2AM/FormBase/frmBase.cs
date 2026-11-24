@@ -7,12 +7,19 @@ using System.Windows.Forms;
 
 namespace ProjecteSecureCoreS2AM
 {
+    /// <summary>
+    /// Formulari base de manteniment genèric que gestiona les operacions CRUD sobre una taula
+    /// de la base de dades. Hereta d'aquest formulari qualsevol pantalla de manteniment del
+    /// projecte; la propietat <see cref="Tabla"/> n'indica la taula destí.
+    /// Les subclasses poden sobreescriure <see cref="ConfigurarDGV"/> per personalitzar la graella.
+    /// </summary>
     public partial class frmBase : Form
     {
         private AccesoDatos bd;
         private DataSet dts;
         private bool esNuevo;
 
+        /// <summary>Nom de la taula de la base de dades sobre la qual opera aquest formulari.</summary>
         [Category("Secure Core"), Description("Nom de la taula de la base de dades a mantenir")]
         public string Tabla { get; set; }
 
@@ -21,6 +28,7 @@ namespace ProjecteSecureCoreS2AM
             get { return "select * from " + Tabla; }
         }
 
+        /// <summary>Inicialitza el formulari base. Cal establir <see cref="Tabla"/> des del dissenyador.</summary>
         public frmBase()
         {
             InitializeComponent();
@@ -55,6 +63,11 @@ namespace ProjecteSecureCoreS2AM
             EnlazarTextBox();
         }
 
+        /// <summary>
+        /// Configura la graella de dades després de carregar el <see cref="DataSet"/>.
+        /// La implementació per defecte oculta totes les columnes que comencen per "id".
+        /// Les subclasses poden sobreescriure aquest mètode per aplicar configuració addicional.
+        /// </summary>
         protected virtual void ConfigurarDGV()
         {
             foreach (DataGridViewColumn col in dgvDatos.Columns)

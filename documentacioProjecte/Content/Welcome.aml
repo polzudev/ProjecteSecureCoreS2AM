@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<topic id="167e8807-51a3-4656-bde0-20f8966690ff" revisionNumber="1">
+	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+		<introduction>
+			<para>
+				Benvingut a la documentació de l'API de <legacyBold>SecureCore G7</legacyBold>, una aplicació
+				d'escriptori Windows Forms desenvolupada amb .NET Framework 4.7.2. L'aplicació gestiona
+				l'autenticació d'usuaris amb hash PBKDF2, control d'accés per nivells i manteniment de dades
+				mitjançant pantalles genèriques CRUD.
+			</para>
+		</introduction>
+
+		<section>
+			<title>Arquitectura de l'aplicació</title>
+			<content>
+				<para>
+					L'aplicació s'estructura en capes ben definides. El flux d'execució comença a
+					<codeInline>Program.Main</codeInline>, que obre la pantalla de presentació
+					(<codeInline>frmSplashScreen</codeInline>). Aquesta gestiona tot el cicle d'autenticació
+					i navegació principal.
+				</para>
+				<code language="none">
+Program.Main()
+  └─ frmSplashScreen          (presentació + àudio)
+       └─ frmLogin             (autenticació PBKDF2)
+            ├─ frmCambioPassword  (primer accés)
+            └─ frmBenvinguda      (benvinguda + progrés)
+                 └─ frmPrincipal  (menú principal per nivell d'accés)
+				</code>
+			</content>
+		</section>
+
+		<section>
+			<title>Mòduls principals</title>
+			<content>
+				<definitionTable>
+					<definedTerm>Autenticació (Login)</definedTerm>
+					<definition>
+						<para>
+							<codeInline>frmLogin</codeInline> valida les credencials contra la base de dades.
+							<codeInline>GestorPasswords</codeInline> s'encarrega de generar salts de 24 bytes,
+							calcular hash PBKDF2 amb 10 101 iteracions i verificar paraules de pas.
+							<codeInline>UsuariosBD</codeInline> proporciona l'accés parametritzat a SQL Server.
+						</para>
+					</definition>
+
+					<definedTerm>Pantalla principal (Principal)</definedTerm>
+					<definition>
+						<para>
+							<codeInline>frmPrincipal</codeInline> carrega les opcions de menú filtrades pel
+							nivell d'accés de l'usuari autenticat (via <codeInline>PrincipalBD</codeInline>).
+							Cada targeta del menú és un control <codeInline>SWLauchForm</codeInline> que obre
+							el formulari corresponent per reflexió.
+						</para>
+					</definition>
+
+					<definedTerm>Formulari base CRUD (FormBase)</definedTerm>
+					<definition>
+						<para>
+							<codeInline>frmBase</codeInline> ofereix operacions CRUD genèriques sobre qualsevol
+							taula de la base de dades. Les subclasses sobreescriuen
+							<codeInline>ConfigurarDGV</codeInline> per personalitzar la graella. La capa de dades
+							és <codeInline>AccesoDatos</codeInline>, que utilitza <codeInline>SqlDataAdapter</codeInline>
+							i <codeInline>SqlCommandBuilder</codeInline>.
+						</para>
+					</definition>
+
+					<definedTerm>Controls personalitzats</definedTerm>
+					<definition>
+						<para>
+							<codeInline>SWTextBox</codeInline> estén <codeInline>TextBox</codeInline> amb
+							validació de format (text lliure, número o codi SecureCore), metadades per a
+							DataBinding i canvi de color en focus. <codeInline>TipoDato</codeInline> és
+							l'enumeració que governa la validació.
+						</para>
+					</definition>
+
+					<definedTerm>Reflexió</definedTerm>
+					<definition>
+						<para>
+							<codeInline>CreadorFormularios.Crear</codeInline> instancia qualsevol formulari
+							WinForms per reflexió a partir del seu nom complet, desacoblant el codi de
+							navegació dels tipus concrets.
+						</para>
+					</definition>
+				</definitionTable>
+			</content>
+		</section>
+
+		<section>
+			<title>Seguretat de les paraules de pas</title>
+			<content>
+				<para>
+					SecureCore G7 implementa emmagatzematge segur de paraules de pas seguint les millors
+					pràctiques criptogràfiques:
+				</para>
+				<list class="ordered">
+					<listItem>
+						<para>En el <legacyBold>primer accés</legacyBold>, la paraula de pas inicial
+						(<codeInline>GestorPasswords.PasswordInicial</codeInline>) es substitueix per
+						una de nova que compleixi els requisits mínims.</para>
+					</listItem>
+					<listItem>
+						<para>Es genera un <legacyBold>salt aleatori</legacyBold> de 24 bytes amb
+						<codeInline>RNGCryptoServiceProvider</codeInline>.</para>
+					</listItem>
+					<listItem>
+						<para>Es calcula el <legacyBold>hash PBKDF2</legacyBold> (SHA-1, 10 101 iteracions,
+						24 bytes de sortida) amb <codeInline>Rfc2898DeriveBytes</codeInline>.</para>
+					</listItem>
+					<listItem>
+						<para>Salt i hash es desen en <legacyBold>format hexadecimal</legacyBold> a la
+						taula d'usuaris de SQL Server.</para>
+					</listItem>
+				</list>
+			</content>
+		</section>
+
+		<relatedTopics>
+			<link xlink:href="8aed56fc-fede-4028-bb7f-5d49c9ce3a4e" />
+		</relatedTopics>
+
+	</developerConceptualDocument>
+</topic>

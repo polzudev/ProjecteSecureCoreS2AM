@@ -11,10 +11,17 @@ using System.Windows.Forms;
 
 namespace ProjecteSecureCoreS2AM.Benvinguda
 {
+    /// <summary>
+    /// Pantalla de benvinguda que mostra el nom i la categoria de l'usuari autenticat i
+    /// avança una barra de progrés fins a tancar-se automàticament.
+    /// </summary>
     public partial class frmBenvinguda : Form
     {
-       
-
+        /// <summary>
+        /// Inicialitza la pantalla de benvinguda amb les dades de l'usuari autenticat.
+        /// </summary>
+        /// <param name="nomUsuari">Nom complet de l'usuari (columna <c>UserName</c>).</param>
+        /// <param name="descCategoria">Descripció de la categoria d'accés de l'usuari (columna <c>DescCategory</c>).</param>
         public frmBenvinguda(string nomUsuari, string descCategoria)
         {
             InitializeComponent();

@@ -8,13 +8,6 @@ using System.Windows.Forms;
 
 namespace ProjecteSecureCoreS2AM
 {
-    /// <summary>
-    /// Reprodueix un GIF animat dins un <see cref="PictureBox"/> sincronitzat amb un fitxer
-    /// d'àudio WAV, a 60 fotogrames per segon mitjançant un temporitzador de 5 ms.
-    /// Cal cridar <see cref="Iniciar"/> des de l'esdeveniment <c>Shown</c> del formulari i
-    /// <see cref="Dispose"/> des de <c>FormClosed</c> per alliberar els recursos.
-    /// </summary>
-    /// <remarks>Generat amb assistència d'IA.</remarks>
     public class SplashScreenAudioCode : IDisposable
     {
         private const int FotogramasPorSegundo = 60;
@@ -28,11 +21,6 @@ namespace ProjecteSecureCoreS2AM
         private int totalFotogrames;
         private int fotogramaActual = -1;
 
-        /// <summary>
-        /// Inicialitza la classe amb el <see cref="PictureBox"/> que mostra el GIF i el flux d'àudio.
-        /// </summary>
-        /// <param name="pictureBox"><see cref="PictureBox"/> que conté el GIF animat com a imatge.</param>
-        /// <param name="audio">Flux d'un fitxer WAV dels recursos del projecte.</param>
         public SplashScreenAudioCode(PictureBox pictureBox, Stream audio)
         {
             this.pictureBox = pictureBox;
@@ -40,10 +28,6 @@ namespace ProjecteSecureCoreS2AM
             tmrFotogrames.Tick += tmrFotogrames_Tick;
         }
 
-        /// <summary>
-        /// Inicia la reproducció simultània del GIF i l'àudio. Cal cridar-lo des de l'esdeveniment
-        /// <c>Shown</c> del formulari perquè el <see cref="PictureBox"/> ja sigui visible.
-        /// </summary>
         public void Iniciar()
         {
             totalFotogrames = pictureBox.Image.GetFrameCount(FrameDimension.Time);
@@ -77,10 +61,6 @@ namespace ProjecteSecureCoreS2AM
             }
         }
 
-        /// <summary>
-        /// Allibera tots els recursos: atura el temporitzador, el reproductor d'àudio i
-        /// restaura la resolució del temporitzador del sistema.
-        /// </summary>
         public void Dispose()
         {
             PararFotogramas();

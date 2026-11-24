@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <SHFBSchemaVersion>2017.9.26.0</SHFBSchemaVersion>
+    <ProjectGuid>{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}</ProjectGuid>
+    <SchemaVersion>2.0</SchemaVersion>
+    <Name>Documentacio</Name>
+    <HtmlHelpName>SecureCoreAPI</HtmlHelpName>
+    <Language>en-US</Language>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>Documentacio</AssemblyName>
+    <HelpTitle>SecureCore G7 â€” DocumentaciÃ³ API</HelpTitle>
+    <HelpFileVersion>1.0.0.0</HelpFileVersion>
+    <NamingMethod>Guid</NamingMethod>
+    <RootNamespaceContainer>True</RootNamespaceContainer>
+    <RootNamespaceTitle>SecureCore G7</RootNamespaceTitle>
+    <HelpFileFormat>Website</HelpFileFormat>
+    <SyntaxFilters>C#</SyntaxFilters>
+    <SdkLinkTarget>Blank</SdkLinkTarget>
+    <FrameworkVersion>.NET Framework 4.7.2</FrameworkVersion>
+    <OutputPath>Help\</OutputPath>
+    <CleanIntermediates>True</CleanIntermediates>
+    <KeepLogFile>True</KeepLogFile>
+    <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
+    <IndentHtml>False</IndentHtml>
+    <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
+    <MissingTags>None</MissingTags>
+    <VisibleItems>Attributes, ExplicitInterfaceImplementations, InheritedMembers, InheritedFrameworkMembers, Protected, ProtectedInternalAsProtected, NonBrowsable</VisibleItems>
+    <MaximumGroupParts>2</MaximumGroupParts>
+    <NamespaceGrouping>False</NamespaceGrouping>
+    <Preliminary>False</Preliminary>
+    <SaveComponentCacheCapacity>100</SaveComponentCacheCapacity>
+    <ComponentPath />
+    <ContentPlacement>AboveNamespaces</ContentPlacement>
+    <CopyrightText>SecureCore G7</CopyrightText>
+  </PropertyGroup>
+  <ItemGroup>
+    <DocumentationSource Include="..\ProjecteSecureCoreS2AM\bin\Debug\ProjecteSecureCoreS2AM.dll" />
+  </ItemGroup>
+  <ImportGroup Label="ExtensionTargets" />
+  <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
+</Project>
+

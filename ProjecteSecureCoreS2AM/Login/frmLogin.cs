@@ -4,12 +4,23 @@ using System.Windows.Forms;
 using ProjecteSecureCoreS2AM.Benvinguda;
 namespace ProjecteSecureCoreS2AM
 {
+    /// <summary>
+    /// Formulari d'inici de sessió. Valida les credencials de l'usuari contra la base de
+    /// dades, gestiona el primer accés (canvi de la paraula de pas inicial) i controla el
+    /// nombre d'intents fallits. En autenticar-se correctament, mostra la pantalla de
+    /// benvinguda i estableix <see cref="UsuarioValidado"/>.
+    /// </summary>
     public partial class frmLogin : Form
     {
         private readonly UsuariosBD bd = new UsuariosBD();
 
+        /// <summary>
+        /// Fila de la base de dades de l'usuari autenticat, disponible quan el diàleg es tanca
+        /// amb <see cref="System.Windows.Forms.DialogResult.OK"/>.
+        /// </summary>
         public DataRow UsuarioValidado { get; private set; }
-
+        int intents = 0;
+        /// <summary>Inicialitza el formulari d'inici de sessió.</summary>
         public frmLogin()
         {
             InitializeComponent();
@@ -53,9 +64,12 @@ namespace ProjecteSecureCoreS2AM
                 }
                 else
                 {
+                    intents++;
                     lblMensaje.Text = "Identificador o paraula de pas incorrectes.";
+                    controlIntents(intents);
                     txtPassword.Clear();
                     txtPassword.Focus();
+
                 }
             }
             catch (Exception ex)
@@ -86,7 +100,7 @@ namespace ProjecteSecureCoreS2AM
         private bool CambiarPasswordInicial(DataRow usuario)
         {
             bool cambiada = false;
-            using (frmCambioPassword frm = new frmCambioPassword())
+            using (frmCambioPassword frm = (frmCambioPassword)CreadorFormularios.Crear("ProjecteSecureCoreS2AM.frmCambioPassword"))
             {
                 if (frm.ShowDialog(this) == DialogResult.OK)
                 {
@@ -104,7 +118,7 @@ namespace ProjecteSecureCoreS2AM
             UsuarioValidado = usuario;
             DialogResult = DialogResult.OK;
             Hide();
-            using (frmBenvinguda benvinguda = new frmBenvinguda(usuario["UserName"].ToString(), usuario["DescCategory"].ToString()))
+            using (Form benvinguda = CreadorFormularios.Crear("ProjecteSecureCoreS2AM.Benvinguda.frmBenvinguda", usuario["UserName"].ToString(), usuario["DescCategory"].ToString()))
             {
                 benvinguda.ShowDialog();
             }
@@ -118,5 +132,14 @@ namespace ProjecteSecureCoreS2AM
         }
 
         private void frmLogin_Load(object sender, EventArgs e) { }
+
+        private void controlIntents(int intents)
+        {
+            if (intents >= 3)
+            {
+                MessageBox.Show("Numero D'intents " + intents + " Compte, Intent d'Intrusió!");
+            }
+        }
     }
+
 }

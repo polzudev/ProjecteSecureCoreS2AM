@@ -6,13 +6,23 @@ using System.Windows.Forms;
 
 namespace ProjecteSecureCoreS2AM
 {
+    /// <summary>
+    /// Diàleg de canvi de paraula de pas que valida en temps real els requisits de seguretat
+    /// definits a <see cref="GestorPasswords"/> i confirma que les dues entrades coincideixen.
+    /// La nova paraula de pas acceptada és accessible a través de <see cref="NuevaPassword"/>.
+    /// </summary>
     public partial class frmCambioPassword : Form
     {
         private static readonly Color ColorCorrecto = Color.FromArgb(120, 220, 140);
         private static readonly Color ColorError = Color.FromArgb(255, 120, 120);
 
+        /// <summary>
+        /// Paraula de pas nova introduïda per l'usuari, disponible quan el diàleg es tanca amb
+        /// <see cref="DialogResult.OK"/>.
+        /// </summary>
         public string NuevaPassword => txtNueva.Text;
 
+        /// <summary>Inicialitza el diàleg i actualitza l'estat de validació inicial.</summary>
         public frmCambioPassword()
         {
             InitializeComponent();

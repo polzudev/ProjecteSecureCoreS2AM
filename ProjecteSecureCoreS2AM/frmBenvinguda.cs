@@ -30,9 +30,7 @@ namespace ProjecteSecureCoreS2AM
             {
                 progressBar1.PerformStep();
                 contador++;
-                
             }
-            
         }
     }
 }

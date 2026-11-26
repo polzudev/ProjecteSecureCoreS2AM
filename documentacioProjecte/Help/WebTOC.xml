@@ -2,93 +2,96 @@
 <HelpTOC>
 
   <HelpTOCNode Title="Welcome to the [TODO: Add project name]" Url="html/167e8807-51a3-4656-bde0-20f8966690ff.htm" />
-  <HelpTOCNode Id="a4414230-3006-4291-a2ac-e6c04f6b29cb" Title="Version History" Url="html/8aed56fc-fede-4028-bb7f-5d49c9ce3a4e.htm">
+  <HelpTOCNode Id="2034ed20-bb02-439e-b2b6-0fccc282b9ea" Title="Version History" Url="html/8aed56fc-fede-4028-bb7f-5d49c9ce3a4e.htm">
     <HelpTOCNode Title="Version 1.0.0.0" Url="html/3ffc535e-4a3e-4613-ac27-f28d6aa07b74.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="33a9342a-6c6e-4716-8bd7-fbffd18cb88a" Title="ProjecteSecureCoreS2AM" Url="html/f1713d4e-85e7-4df6-5779-9b2142bb3ed6.htm">
-    <HelpTOCNode Id="e945715c-9658-4064-8fbb-2e3a513cae1d" Title="AccesoDatos Class" Url="html/09725dc8-72d2-be74-1d74-b68d8b5be429.htm">
+  <HelpTOCNode Id="74bf6e21-2766-42fc-af1c-18f54f88219b" Title="ProjecteSecureCoreS2AM" Url="html/f1713d4e-85e7-4df6-5779-9b2142bb3ed6.htm">
+    <HelpTOCNode Id="86a23af4-21af-4f62-b488-cfed6ed1505e" Title="AccesoDatos Class" Url="html/09725dc8-72d2-be74-1d74-b68d8b5be429.htm">
       <HelpTOCNode Title="AccesoDatos Constructor " Url="html/596ddc37-0f4e-51d4-493a-47f9c27b8520.htm" />
-      <HelpTOCNode Id="f1f323d6-1b9f-4a6e-ba11-f85a4fcd2259" Title="AccesoDatos Methods" Url="html/622f1e59-a242-502f-4489-82bd532c1913.htm">
+      <HelpTOCNode Id="c4e8a1ac-1028-4acf-9af1-691e80a2097f" Title="AccesoDatos Methods" Url="html/622f1e59-a242-502f-4489-82bd532c1913.htm">
         <HelpTOCNode Title="Actualitzar Method " Url="html/ed480453-4204-6018-89d1-8b528e1d7d38.htm" />
         <HelpTOCNode Title="AfegirDataTable Method " Url="html/d07a221c-5566-386e-f9c6-462a5dee2f70.htm" />
         <HelpTOCNode Title="Executa Method " Url="html/49c6925c-7573-5346-0cea-04075437a08a.htm" />
+        <HelpTOCNode Title="ExecutarSP Method " Url="html/2b045948-a193-2f4c-8ce9-65633e8f0636.htm" />
+        <HelpTOCNode Title="ExecutarTransaccio Method " Url="html/dab3d590-8d1c-1f38-41f1-cc83b82d62a5.htm" />
         <HelpTOCNode Title="PortarDataTable Method " Url="html/432aad5f-69ee-af0b-79bc-bd79d30dadab.htm" />
-        <HelpTOCNode Id="b902f276-ee76-45ad-810f-3d541e3fdd2b" Title="PortarPerConsulta Method " Url="html/1b28e024-0ff7-56cf-b136-4a1bd9c84e56.htm">
+        <HelpTOCNode Id="202003b8-e4d0-477f-9c75-080bd4950e96" Title="PortarPerConsulta Method " Url="html/1b28e024-0ff7-56cf-b136-4a1bd9c84e56.htm">
           <HelpTOCNode Title="PortarPerConsulta Method (String)" Url="html/e488a1b2-ca7f-c182-7d4d-b72078d7f4e0.htm" />
           <HelpTOCNode Title="PortarPerConsulta Method (String, String)" Url="html/0f469324-393f-7b5b-4f8d-b3631d37c27c.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="PortarTaula Method " Url="html/1d950983-c015-a236-d342-9079a0748c02.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="afeb6a41-5fb9-428e-a01c-ddb52f87b013" Title="CreadorFormularios Class" Url="html/86671b2c-62da-3100-858d-779fe49cd2ce.htm">
-      <HelpTOCNode Id="c7f3d39d-00fc-4aa1-83d1-9c28cb07766b" Title="CreadorFormularios Methods" Url="html/ca96d3ab-dcf4-7c46-3627-0df52a264d49.htm">
+    <HelpTOCNode Id="54a76b2c-793f-4ddf-b124-265972b2d305" Title="CreadorFormularios Class" Url="html/86671b2c-62da-3100-858d-779fe49cd2ce.htm">
+      <HelpTOCNode Id="dd5a16de-e5b3-470f-9c5d-cab02da60a71" Title="CreadorFormularios Methods" Url="html/ca96d3ab-dcf4-7c46-3627-0df52a264d49.htm">
         <HelpTOCNode Title="Crear Method " Url="html/4e63421d-e8b7-65e0-797d-bb8a8226f613.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="587252ff-b601-46fe-bb66-628bfc98a1f0" Title="frmBase Class" Url="html/a3c2cc74-847a-6302-a735-463c040f72d8.htm">
+    <HelpTOCNode Id="4f01c865-c1f4-4e34-ae23-808f7b83cb48" Title="frmBase Class" Url="html/a3c2cc74-847a-6302-a735-463c040f72d8.htm">
       <HelpTOCNode Title="frmBase Constructor " Url="html/e8e7c3b3-0e2c-1b9a-0def-58b2aec10b2e.htm" />
-      <HelpTOCNode Id="123517dd-17e1-4de9-a42f-314ed246b34c" Title="frmBase Properties" Url="html/2ba9fdc3-b82f-72cb-a1b4-48c6ba8c6fad.htm">
+      <HelpTOCNode Id="299fd787-7c70-4826-9c77-2491c7b89dfa" Title="frmBase Properties" Url="html/2ba9fdc3-b82f-72cb-a1b4-48c6ba8c6fad.htm">
         <HelpTOCNode Title="Tabla Property " Url="html/2c7f045b-a234-a63a-02fb-f4217643b1b8.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="a764edfc-5782-46cb-b22c-df0af3dd3ef6" Title="frmBase Methods" Url="html/64de566e-5d98-7f40-7324-af5420a12d46.htm">
+      <HelpTOCNode Id="5118ecbb-d0cc-49aa-8b6f-5fe0479a81a9" Title="frmBase Methods" Url="html/64de566e-5d98-7f40-7324-af5420a12d46.htm">
         <HelpTOCNode Title="ConfigurarDGV Method " Url="html/1d35f550-6aa4-a075-be90-bbb88613e939.htm" />
-        <HelpTOCNode Id="6a42ccad-13cc-45d0-8ea8-837dd57f2987" Title="Dispose Method " Url="html/754fce6e-0615-40c6-76e0-0a5483b0c96c.htm">
+        <HelpTOCNode Title="ConfigurarFK Method " Url="html/ac618c26-3555-7e1f-26a5-853353225b55.htm" />
+        <HelpTOCNode Id="f11bdd38-4368-448e-ba4c-e932e4c3744f" Title="Dispose Method " Url="html/754fce6e-0615-40c6-76e0-0a5483b0c96c.htm">
           <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/aaa37d96-c12d-c988-9e45-d73fefb41c23.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
       <HelpTOCNode Title="frmBase Events" Url="html/8fe6b3c8-d21a-d1e6-ee30-d0eebc8439a8.htm" />
-      <HelpTOCNode Id="5539b779-2c03-4494-86e3-e3150e8392dd" Title="frmBase Fields" Url="html/e7b7bec5-a834-55a8-240c-af02f3c80fa3.htm">
+      <HelpTOCNode Id="f8c76e17-0077-484d-b74d-3644194ce51b" Title="frmBase Fields" Url="html/e7b7bec5-a834-55a8-240c-af02f3c80fa3.htm">
         <HelpTOCNode Title="dgvDatos Field" Url="html/74d8dfe4-848b-6b35-6ef8-db3b0e8b5845.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="55538378-e1fa-471d-8cc5-2dd41b404ab1" Title="frmCambioPassword Class" Url="html/6906e16c-55c8-2fa6-59c7-a7dc5952fc56.htm">
+    <HelpTOCNode Id="e7d0490b-fbec-4609-985a-2c68b0537b8d" Title="frmCambioPassword Class" Url="html/6906e16c-55c8-2fa6-59c7-a7dc5952fc56.htm">
       <HelpTOCNode Title="frmCambioPassword Constructor " Url="html/4f6bbcce-c6fa-c74b-8ae3-e51ad4af0332.htm" />
-      <HelpTOCNode Id="65e16197-15da-4452-8eab-ca01cb1da7ac" Title="frmCambioPassword Properties" Url="html/f23d2988-211f-fe16-b370-0d1fad16229f.htm">
+      <HelpTOCNode Id="cb00d557-2004-49b8-93b4-d2042c9ad4b1" Title="frmCambioPassword Properties" Url="html/f23d2988-211f-fe16-b370-0d1fad16229f.htm">
         <HelpTOCNode Title="NuevaPassword Property " Url="html/fa815c0a-8732-1b83-0fcc-9fb687947e83.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="843b1313-0914-4b7a-890f-fab41533eaa5" Title="frmCambioPassword Methods" Url="html/62b89e28-0dbe-eaf6-cad9-9cb1cd0792e3.htm">
-        <HelpTOCNode Id="3a3ff4cf-dd3e-41ee-ba80-13f5ae386b7b" Title="Dispose Method " Url="html/b4d31613-f459-3f65-d15a-96ff4d8bebaa.htm">
+      <HelpTOCNode Id="3d2d8a83-181b-483a-9673-58e041175abd" Title="frmCambioPassword Methods" Url="html/62b89e28-0dbe-eaf6-cad9-9cb1cd0792e3.htm">
+        <HelpTOCNode Id="a3bcfeb9-271b-46c6-9141-9c11a0215a3e" Title="Dispose Method " Url="html/b4d31613-f459-3f65-d15a-96ff4d8bebaa.htm">
           <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/a9727227-ee85-4e52-8c38-6a8abb51b7d3.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
       <HelpTOCNode Title="frmCambioPassword Events" Url="html/577123a3-c4ef-ac4b-bd8e-9f7b9e94151c.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="717c2983-2fc3-4e8b-83a8-33bf396d7e4d" Title="frmLogin Class" Url="html/bd125c7b-5b16-e9c4-9deb-a63e324fa33c.htm">
+    <HelpTOCNode Id="d999be05-a28c-4f3e-a32a-796d44cb6c55" Title="frmLogin Class" Url="html/bd125c7b-5b16-e9c4-9deb-a63e324fa33c.htm">
       <HelpTOCNode Title="frmLogin Constructor " Url="html/a73c9bc6-7bc8-0b9f-8f98-21deedb313af.htm" />
-      <HelpTOCNode Id="f761c829-ba5b-424d-a7b1-3ca2f9566981" Title="frmLogin Properties" Url="html/0a7d9a82-01d2-82c7-b153-858e15c37374.htm">
+      <HelpTOCNode Id="9a3db38b-0ca7-4f5d-8da9-84b5c391d86a" Title="frmLogin Properties" Url="html/0a7d9a82-01d2-82c7-b153-858e15c37374.htm">
         <HelpTOCNode Title="UsuarioValidado Property " Url="html/f80dd525-ae67-3f10-0912-19d9d892a791.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="39bf376d-b323-453d-a1d6-e5561c72c3c5" Title="frmLogin Methods" Url="html/234e8e15-48df-20f4-c04c-93620ee8480b.htm">
-        <HelpTOCNode Id="f66d7de8-752a-4930-baa8-9050092b82af" Title="Dispose Method " Url="html/f768e319-8e61-e3b2-cff1-0294695c114a.htm">
+      <HelpTOCNode Id="388d80f4-9c6f-4ce1-98f0-bf1f48923122" Title="frmLogin Methods" Url="html/234e8e15-48df-20f4-c04c-93620ee8480b.htm">
+        <HelpTOCNode Id="d602ce55-88f6-4b10-ae92-437ea2ce36f2" Title="Dispose Method " Url="html/f768e319-8e61-e3b2-cff1-0294695c114a.htm">
           <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/3b82ceb1-64cd-30ed-2026-57e5f3a4eb53.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
       <HelpTOCNode Title="frmLogin Events" Url="html/0d5e767d-0eab-8dfe-01ef-cde9dbd241a9.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="e89b4f3a-f6ec-4dc6-a42b-b6acff23784e" Title="frmPrincipal Class" Url="html/618e6d0e-dd20-b04d-e592-6160f6bdb498.htm">
+    <HelpTOCNode Id="f9eee83a-d7ec-4741-a54d-0df741d51874" Title="frmPrincipal Class" Url="html/618e6d0e-dd20-b04d-e592-6160f6bdb498.htm">
       <HelpTOCNode Title="frmPrincipal Constructor " Url="html/16308170-75e0-7874-d7d9-b445eae7c445.htm" />
-      <HelpTOCNode Id="0d8d8da0-6df3-4c48-809f-309a43c5595e" Title="frmPrincipal Properties" Url="html/6c81a81e-2d05-9597-1130-7845a4c0be23.htm">
+      <HelpTOCNode Id="b5190b1d-0717-460a-bd85-f5ab0bac6df9" Title="frmPrincipal Properties" Url="html/6c81a81e-2d05-9597-1130-7845a4c0be23.htm">
         <HelpTOCNode Title="SesionCerrada Property " Url="html/7e19949d-feef-a38a-d75c-264e6b57878d.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="588bbb1a-bee8-4533-abf6-d5eb0f718ed7" Title="frmPrincipal Methods" Url="html/1781a6ec-9d23-92bf-ac25-6c90fecf2188.htm">
-        <HelpTOCNode Id="9ffcb6c1-5f7a-4022-8035-aff3a9c82961" Title="Dispose Method " Url="html/a96d5189-1528-8618-11c5-2dc5f162c372.htm">
+      <HelpTOCNode Id="df1d227d-534d-4b00-901a-17cd29a94c7a" Title="frmPrincipal Methods" Url="html/1781a6ec-9d23-92bf-ac25-6c90fecf2188.htm">
+        <HelpTOCNode Id="998b171e-aaaa-46c3-a0f8-0f76cd5215ea" Title="Dispose Method " Url="html/a96d5189-1528-8618-11c5-2dc5f162c372.htm">
           <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/8601119f-2278-ecd3-7bef-7a05bc019167.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
       <HelpTOCNode Title="frmPrincipal Events" Url="html/02799e6d-5f99-834a-0635-9630f851d49e.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="484c9431-6896-442b-890d-d9092839dbed" Title="frmSplashScreen Class" Url="html/23bd8f70-af95-f4c9-5606-3f773b15b3b7.htm">
+    <HelpTOCNode Id="8e2f6760-c7a9-4aa5-ae3f-0881a4eeedfb" Title="frmSplashScreen Class" Url="html/23bd8f70-af95-f4c9-5606-3f773b15b3b7.htm">
       <HelpTOCNode Title="frmSplashScreen Constructor " Url="html/7cb6d3c2-a476-bfbf-978f-4e2f2dc74f29.htm" />
       <HelpTOCNode Title="frmSplashScreen Properties" Url="html/8223650d-c23e-f628-c4bd-cbda008dc4a9.htm" />
-      <HelpTOCNode Id="c59d729b-30a6-4e88-92b2-ad3b6cf10af0" Title="frmSplashScreen Methods" Url="html/934d42a4-fd95-40c4-ceb2-846bbea37529.htm">
-        <HelpTOCNode Id="a851e688-0c4f-4010-b706-82d37ba677da" Title="Dispose Method " Url="html/845c8ada-3b0b-ee72-9248-2e805cc69fb3.htm">
+      <HelpTOCNode Id="e4792d11-07e9-4797-a9e2-bb76483b8c5c" Title="frmSplashScreen Methods" Url="html/934d42a4-fd95-40c4-ceb2-846bbea37529.htm">
+        <HelpTOCNode Id="b9ab60c5-6534-4044-8f13-f00999185549" Title="Dispose Method " Url="html/845c8ada-3b0b-ee72-9248-2e805cc69fb3.htm">
           <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/30515db0-abec-ba46-5ceb-ecaa444e2c1d.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
       <HelpTOCNode Title="frmSplashScreen Events" Url="html/4642c6c9-1914-093c-fbe0-edfca838a4c1.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="765ba015-ce0f-4420-a68b-681b89fde03d" Title="GestorPasswords Class" Url="html/f16c7156-dd46-beb8-3a6e-c9a209d6d1c4.htm">
-      <HelpTOCNode Id="a82c8bf6-6816-4cbc-bbd9-8065886ef12a" Title="GestorPasswords Methods" Url="html/bbc00f45-7df7-9275-c3e6-fdce6bbe593c.htm">
+    <HelpTOCNode Id="a1738046-d76d-499b-a898-6b01a5a26b94" Title="GestorPasswords Class" Url="html/f16c7156-dd46-beb8-3a6e-c9a209d6d1c4.htm">
+      <HelpTOCNode Id="de752a2d-23a5-4f79-a108-3f594dc4188b" Title="GestorPasswords Methods" Url="html/bbc00f45-7df7-9275-c3e6-fdce6bbe593c.htm">
         <HelpTOCNode Title="ABytes Method " Url="html/1991405c-091f-ba8e-6ca6-651e5d88c073.htm" />
         <HelpTOCNode Title="ATexto Method " Url="html/744ba7fa-1d24-2cde-e339-51678689bc62.htm" />
         <HelpTOCNode Title="CalcularHash Method " Url="html/bbd75290-e750-c3cb-e041-c2df32ac7e4d.htm" />
@@ -96,35 +99,35 @@
         <HelpTOCNode Title="RequisitosIncumplidos Method " Url="html/3cfdbdbb-1a8c-b676-8ad6-b302b623ed58.htm" />
         <HelpTOCNode Title="VerificarPassword Method " Url="html/99376d09-122e-509a-451c-d4b6ade16d1b.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="81cdef36-bbe9-40d4-b4fa-d3d04d2ad231" Title="GestorPasswords Fields" Url="html/425e1fe0-70f8-f86e-073b-9a249688c7a4.htm">
+      <HelpTOCNode Id="fbaae1c2-8406-4731-9a70-2fe610d71a4d" Title="GestorPasswords Fields" Url="html/425e1fe0-70f8-f86e-073b-9a249688c7a4.htm">
         <HelpTOCNode Title="LongitudMinima Field" Url="html/5725425e-338e-890a-4c32-083762f92e4f.htm" />
         <HelpTOCNode Title="PasswordInicial Field" Url="html/fdcf0ad7-31f1-38ae-daa1-3e20022caaad.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="d6d815b6-a1ea-4f00-8d14-5960cc3cb509" Title="PrincipalBD Class" Url="html/3f23563a-c741-f2a4-e235-6f3ab1cede7e.htm">
+    <HelpTOCNode Id="e295d888-c2cd-4db1-8170-da9442412adb" Title="PrincipalBD Class" Url="html/3f23563a-c741-f2a4-e235-6f3ab1cede7e.htm">
       <HelpTOCNode Title="PrincipalBD Constructor " Url="html/50c4ab0e-63ab-932e-0c1b-7ea535d3c0da.htm" />
-      <HelpTOCNode Id="28660b81-9ad3-43e1-8cc0-a932ba5de198" Title="PrincipalBD Methods" Url="html/1ae413cf-7547-c8c7-fe63-bed95ca446d6.htm">
+      <HelpTOCNode Id="3b082b3a-1ec8-426b-a022-49e9cd6d494d" Title="PrincipalBD Methods" Url="html/1ae413cf-7547-c8c7-fe63-bed95ca446d6.htm">
         <HelpTOCNode Title="ObtenerOpciones Method " Url="html/cf3ad9b4-7bf1-afa0-07a9-b56f99e8372d.htm" />
         <HelpTOCNode Title="ObtenerPerfil Method " Url="html/368d5048-e276-b583-75a5-30e9afc20ed6.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="2b2c6152-a679-42e9-a540-528ee1962884" Title="SplashScreenAudioCode Class" Url="html/cd6a4fcb-65eb-1b9e-d416-47eb82a8b8bb.htm">
+    <HelpTOCNode Id="ec0dbbbf-027e-45c6-9581-833f89a7df7f" Title="SplashScreenAudioCode Class" Url="html/cd6a4fcb-65eb-1b9e-d416-47eb82a8b8bb.htm">
       <HelpTOCNode Title="SplashScreenAudioCode Constructor " Url="html/50b851af-f440-5d31-34d0-b4c1bb15281a.htm" />
-      <HelpTOCNode Id="74f73e84-0732-488e-b6c6-5d91acba481d" Title="SplashScreenAudioCode Methods" Url="html/555be28d-c3fc-83d1-7e0d-a2af6329856c.htm">
+      <HelpTOCNode Id="7784f2de-d8e2-439b-a4b4-b828ee98fed9" Title="SplashScreenAudioCode Methods" Url="html/555be28d-c3fc-83d1-7e0d-a2af6329856c.htm">
         <HelpTOCNode Title="Dispose Method " Url="html/f88d2091-a7e8-368f-0f20-01d7acd160bc.htm" />
         <HelpTOCNode Title="Iniciar Method " Url="html/5848992a-6bfe-8b23-5cef-9a7bde423394.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="bddb478c-6c32-48ae-9914-5e2ed1574a99" Title="SWLauchForm Class" Url="html/ee361e79-187a-372b-00c9-8caacaf1be2a.htm">
+    <HelpTOCNode Id="1171ae44-0aab-4bb7-b87f-b95c350a35ce" Title="SWLauchForm Class" Url="html/ee361e79-187a-372b-00c9-8caacaf1be2a.htm">
       <HelpTOCNode Title="SWLauchForm Constructor " Url="html/78bca6c7-a7b2-5b5a-460f-ad10b03af187.htm" />
-      <HelpTOCNode Id="433c8675-1577-45d3-a577-0e7aa5102519" Title="SWLauchForm Properties" Url="html/e31af329-3037-2d8d-36ef-17c278d28051.htm">
+      <HelpTOCNode Id="e7bb72bb-3c22-4c6e-b35e-04a88f9695e9" Title="SWLauchForm Properties" Url="html/e31af329-3037-2d8d-36ef-17c278d28051.htm">
         <HelpTOCNode Title="Classe Property " Url="html/7805f682-1a95-1b18-a85a-dd84afa2c097.htm" />
         <HelpTOCNode Title="Form Property " Url="html/905405d3-95f9-c068-3b14-4d746b65862e.htm" />
         <HelpTOCNode Title="Imagen Property " Url="html/bd9ff03c-61c1-0676-ca0b-e41fac5b1dbb.htm" />
         <HelpTOCNode Title="Texto Property " Url="html/82117c1f-1eec-10fe-127e-23faa443ee60.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="cf6f167c-8892-4343-9598-bcd83b0405df" Title="SWLauchForm Methods" Url="html/e2f8adcb-7e56-3071-9cb9-2f81d252ac86.htm">
-        <HelpTOCNode Id="631f4472-c293-4dd5-a414-5f6c10be0542" Title="Dispose Method " Url="html/014a83ed-3904-eeaa-e792-a2bc10e9b637.htm">
+      <HelpTOCNode Id="2599e646-3cc8-46c2-82fc-4f837cd99218" Title="SWLauchForm Methods" Url="html/e2f8adcb-7e56-3071-9cb9-2f81d252ac86.htm">
+        <HelpTOCNode Id="24c0812e-1363-42dd-a5de-5088cee7c628" Title="Dispose Method " Url="html/014a83ed-3904-eeaa-e792-a2bc10e9b637.htm">
           <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/e6ed2a1d-585c-da06-2c58-87ef27861b16.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="Ejecutar Method " Url="html/7b836f0d-fad5-9a58-1696-31f9db074767.htm" />
@@ -135,16 +138,16 @@
       </HelpTOCNode>
       <HelpTOCNode Title="SWLauchForm Events" Url="html/8ad92f68-ea3c-bade-0f33-1d4d0282372a.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="2c64b443-cb08-4486-b9c8-86f05f9a6eed" Title="SWTextBox Class" Url="html/27d685e4-960f-0878-2be3-45f6817a996c.htm">
+    <HelpTOCNode Id="96a42bda-1cb1-4604-befa-b4a0be58106c" Title="SWTextBox Class" Url="html/27d685e4-960f-0878-2be3-45f6817a996c.htm">
       <HelpTOCNode Title="SWTextBox Constructor " Url="html/79dd72d7-e68e-9678-0e1e-35cd6936a60b.htm" />
-      <HelpTOCNode Id="c630f9a9-f0e2-453e-9f70-d048d2da3482" Title="SWTextBox Properties" Url="html/5e9b8549-6bfd-2be4-9af8-b79af6e862a8.htm">
+      <HelpTOCNode Id="44085e6b-60e2-4bbd-9b97-4688ea14b4fd" Title="SWTextBox Properties" Url="html/5e9b8549-6bfd-2be4-9af8-b79af6e862a8.htm">
         <HelpTOCNode Title="CampoBD Property " Url="html/5247195e-4a52-e85c-cbea-18b859aded7a.htm" />
         <HelpTOCNode Title="ColorFoco Property " Url="html/1f13eeab-8583-0adc-baa7-e59d816b6b99.htm" />
         <HelpTOCNode Title="EsClaveForanea Property " Url="html/da7fe38c-ff5c-df99-fa68-1e3373d18b6f.htm" />
         <HelpTOCNode Title="PuedeEstarVacio Property " Url="html/b37638db-b7da-ab4b-1681-8ab3fa970944.htm" />
         <HelpTOCNode Title="Tipo Property " Url="html/8b7bc921-7f4b-9b75-ce00-f12e46e3b17e.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="3b639d44-f343-4096-a7a3-ea933b62cdd2" Title="SWTextBox Methods" Url="html/bdb425b0-354f-705d-ed77-3b5df0aac975.htm">
+      <HelpTOCNode Id="43b33eb3-d5de-49b6-952d-2bbb606f4071" Title="SWTextBox Methods" Url="html/bdb425b0-354f-705d-ed77-3b5df0aac975.htm">
         <HelpTOCNode Title="OnEnter Method " Url="html/7c189dc4-3fac-7058-3731-bbfd571bf6e1.htm" />
         <HelpTOCNode Title="OnLeave Method " Url="html/60fa0f9b-8258-d4ed-7845-edfd9d8555ae.htm" />
         <HelpTOCNode Title="ValidateData Method " Url="html/e8ff9ee5-7bbd-14a7-5031-95e6cae9be02.htm" />
@@ -152,20 +155,20 @@
       <HelpTOCNode Title="SWTextBox Events" Url="html/fb2fbb5a-816b-d7db-2f50-d089adbbb6b5.htm" />
     </HelpTOCNode>
     <HelpTOCNode Title="TipoDato Enumeration" Url="html/d6da2d2f-b8b6-e243-d180-253ea9d9727f.htm" />
-    <HelpTOCNode Id="4e8b006f-76d7-46bb-9c6a-593659f128b0" Title="UsuariosBD Class" Url="html/e4ed356a-b258-cdb5-9272-e1365a5ddaa2.htm">
+    <HelpTOCNode Id="666a6790-a7cf-4f71-8ce5-89531cd11919" Title="UsuariosBD Class" Url="html/e4ed356a-b258-cdb5-9272-e1365a5ddaa2.htm">
       <HelpTOCNode Title="UsuariosBD Constructor " Url="html/594b53a4-52ec-e3d4-0026-c684c523ac43.htm" />
-      <HelpTOCNode Id="247a8d76-7187-4497-bc22-41bf03925626" Title="UsuariosBD Methods" Url="html/5dfd637c-3fdf-2452-7bdf-797a4eea84cb.htm">
+      <HelpTOCNode Id="698cabb5-11ba-4b6c-8bd0-a22e6cfc9bbf" Title="UsuariosBD Methods" Url="html/5dfd637c-3fdf-2452-7bdf-797a4eea84cb.htm">
         <HelpTOCNode Title="GuardarPassword Method " Url="html/1e0bedc6-fd2f-b40c-8f07-858f8ec9f99e.htm" />
         <HelpTOCNode Title="ObtenerUsuario Method " Url="html/ee99554b-3440-aa9b-1d34-2e46933923c7.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="63a2e67a-976f-47f7-bbba-d51b1503841d" Title="ProjecteSecureCoreS2AM.Benvinguda" Url="html/0c74b6df-4d92-9603-2774-5544222ea218.htm">
-    <HelpTOCNode Id="f7156b17-b8f1-4339-a1bd-330f3bf4f56c" Title="frmBenvinguda Class" Url="html/c70350d8-b4dc-07ea-8320-e53852f9fc9a.htm">
+  <HelpTOCNode Id="56b8cba4-9a8f-42bd-a6e7-2b5a03ffa3f9" Title="ProjecteSecureCoreS2AM.Benvinguda" Url="html/0c74b6df-4d92-9603-2774-5544222ea218.htm">
+    <HelpTOCNode Id="234eac4d-4c07-4a7b-87dc-48616a4b5794" Title="frmBenvinguda Class" Url="html/c70350d8-b4dc-07ea-8320-e53852f9fc9a.htm">
       <HelpTOCNode Title="frmBenvinguda Constructor " Url="html/93e1165f-9cfe-0702-c582-04f73464ceaa.htm" />
       <HelpTOCNode Title="frmBenvinguda Properties" Url="html/25ca07a8-4ff9-c3f8-cff2-f3fcd9e9951e.htm" />
-      <HelpTOCNode Id="d7a1eb72-c50d-40d4-8290-20718743c49a" Title="frmBenvinguda Methods" Url="html/14bc32c2-255c-a812-36d8-e20c7d67533e.htm">
-        <HelpTOCNode Id="1a8b5241-7af3-4783-bea8-3029a8bec59f" Title="Dispose Method " Url="html/8a09fa74-c3e9-281d-c891-e16090ece350.htm">
+      <HelpTOCNode Id="70bcf9be-4b46-4edf-ae8b-b62de5289e71" Title="frmBenvinguda Methods" Url="html/14bc32c2-255c-a812-36d8-e20c7d67533e.htm">
+        <HelpTOCNode Id="ec6271e7-fd1d-4a22-bf7c-9136bc572fb3" Title="Dispose Method " Url="html/8a09fa74-c3e9-281d-c891-e16090ece350.htm">
           <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/8d6ae3f1-3f29-6326-f917-65b39329fc0f.htm" />
         </HelpTOCNode>
       </HelpTOCNode>

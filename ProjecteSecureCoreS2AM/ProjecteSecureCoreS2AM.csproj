@@ -94,6 +94,9 @@
     </Compile>
     <Compile Include="Login\GestorPasswords.cs" />
     <Compile Include="Login\UsuariosBD.cs" />
+    <Compile Include="MantenimentPlanetes\frmPlanetes.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Principal\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenimentPlanetes\frmPlanetes.resx">
+      <DependentUpon>frmPlanetes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>

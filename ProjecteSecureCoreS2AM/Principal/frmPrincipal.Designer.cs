@@ -224,6 +224,7 @@ namespace ProjecteSecureCoreS2AM
             this.flpOpciones.Padding = new System.Windows.Forms.Padding(16, 0, 16, 16);
             this.flpOpciones.Size = new System.Drawing.Size(1100, 475);
             this.flpOpciones.TabIndex = 3;
+            this.flpOpciones.Paint += new System.Windows.Forms.PaintEventHandler(this.flpOpciones_Paint);
             // 
             // pnlPie
             // 

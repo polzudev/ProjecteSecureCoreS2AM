@@ -178,5 +178,10 @@ namespace ProjecteSecureCoreS2AM
         {
 
         }
+
+        private void flpOpciones_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

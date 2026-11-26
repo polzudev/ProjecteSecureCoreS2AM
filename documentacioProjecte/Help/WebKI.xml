@@ -10,6 +10,8 @@
   <HelpKINode Title="AccesoDatos.Actualitzar method" Url="html/ed480453-4204-6018-89d1-8b528e1d7d38.htm" />
   <HelpKINode Title="AccesoDatos.AfegirDataTable method" Url="html/d07a221c-5566-386e-f9c6-462a5dee2f70.htm" />
   <HelpKINode Title="AccesoDatos.Executa method" Url="html/49c6925c-7573-5346-0cea-04075437a08a.htm" />
+  <HelpKINode Title="AccesoDatos.ExecutarSP method" Url="html/2b045948-a193-2f4c-8ce9-65633e8f0636.htm" />
+  <HelpKINode Title="AccesoDatos.ExecutarTransaccio method" Url="html/dab3d590-8d1c-1f38-41f1-cc83b82d62a5.htm" />
   <HelpKINode Title="AccesoDatos.PortarDataTable method" Url="html/432aad5f-69ee-af0b-79bc-bd79d30dadab.htm" />
   <HelpKINode Title="AccesoDatos.PortarPerConsulta method" Url="html/1b28e024-0ff7-56cf-b136-4a1bd9c84e56.htm" />
   <HelpKINode Title="AccesoDatos.PortarTaula method" Url="html/1d950983-c015-a236-d342-9079a0748c02.htm" />
@@ -22,6 +24,7 @@
   <HelpKINode Title="Codigo enumeration member" Url="html/d6da2d2f-b8b6-e243-d180-253ea9d9727f.htm" />
   <HelpKINode Title="ColorFoco property" Url="html/1f13eeab-8583-0adc-baa7-e59d816b6b99.htm" />
   <HelpKINode Title="ConfigurarDGV method" Url="html/1d35f550-6aa4-a075-be90-bbb88613e939.htm" />
+  <HelpKINode Title="ConfigurarFK method" Url="html/ac618c26-3555-7e1f-26a5-853353225b55.htm" />
   <HelpKINode Title="CreadorFormularios class">
     <HelpKINode Title="CreadorFormularios Class" Url="html/86671b2c-62da-3100-858d-779fe49cd2ce.htm" />
     <HelpKINode Title="methods" Url="html/ca96d3ab-dcf4-7c46-3627-0df52a264d49.htm" />
@@ -42,6 +45,8 @@
   <HelpKINode Title="Ejecutar method" Url="html/7b836f0d-fad5-9a58-1696-31f9db074767.htm" />
   <HelpKINode Title="EsClaveForanea property" Url="html/da7fe38c-ff5c-df99-fa68-1e3373d18b6f.htm" />
   <HelpKINode Title="Executa method" Url="html/49c6925c-7573-5346-0cea-04075437a08a.htm" />
+  <HelpKINode Title="ExecutarSP method" Url="html/2b045948-a193-2f4c-8ce9-65633e8f0636.htm" />
+  <HelpKINode Title="ExecutarTransaccio method" Url="html/dab3d590-8d1c-1f38-41f1-cc83b82d62a5.htm" />
   <HelpKINode Title="Form property" Url="html/905405d3-95f9-c068-3b14-4d746b65862e.htm" />
   <HelpKINode Title="frmBase class">
     <HelpKINode Title="frmBase Class" Url="html/a3c2cc74-847a-6302-a735-463c040f72d8.htm" />
@@ -52,6 +57,7 @@
     <HelpKINode Title="properties" Url="html/2ba9fdc3-b82f-72cb-a1b4-48c6ba8c6fad.htm" />
   </HelpKINode>
   <HelpKINode Title="frmBase.ConfigurarDGV method" Url="html/1d35f550-6aa4-a075-be90-bbb88613e939.htm" />
+  <HelpKINode Title="frmBase.ConfigurarFK method" Url="html/ac618c26-3555-7e1f-26a5-853353225b55.htm" />
   <HelpKINode Title="frmBase.dgvDatos field" Url="html/74d8dfe4-848b-6b35-6ef8-db3b0e8b5845.htm" />
   <HelpKINode Title="frmBase.Dispose method" Url="html/754fce6e-0615-40c6-76e0-0a5483b0c96c.htm" />
   <HelpKINode Title="frmBase.frmBase constructor" Url="html/e8e7c3b3-0e2c-1b9a-0def-58b2aec10b2e.htm" />

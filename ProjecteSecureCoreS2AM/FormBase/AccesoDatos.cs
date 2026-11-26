@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -135,6 +137,46 @@ namespace ProjecteSecureCoreS2AM
             return registresAfectats;
         }
 
+        /// <summary>
+        /// Executa un Stored Procedure i retorna el resultat com a <see cref="DataTable"/>.
+        /// </summary>
+        /// <param name="nomSP">Nom del Stored Procedure a executar.</param>
+        /// <param name="parametres">Paràmetres del SP com a diccionari nom→valor. Pot ser null.</param>
+        /// <returns><see cref="DataTable"/> amb el resultat retornat pel SP.</returns>
+        public DataTable ExecutarSP(string nomSP, Dictionary<string, object> parametres = null)
+        {
+            DataTable dt = new DataTable();
+            using (SqlCommand cmd = new SqlCommand(nomSP, conn))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                if (parametres != null)
+                {
+                    foreach (var p in parametres)
+                    {
+                        if (p.Value == null)
+                            cmd.Parameters.AddWithValue(p.Key, DBNull.Value);
+                        else
+                            cmd.Parameters.AddWithValue(p.Key, p.Value);
+                    }
+                }
+
+                using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                {
+                    try
+                    {
+                        conn.Open();
+                        adapter.Fill(dt);
+                    }
+                    finally
+                    {
+                        conn.Close();
+                    }
+                }
+            }
+            return dt;
+        }
+
         private DataSet Omplir(string consulta, DataSet dts, string nomDataTable)
         {
             using (SqlDataAdapter adapter = new SqlDataAdapter(consulta, conn))
@@ -150,6 +192,29 @@ namespace ProjecteSecureCoreS2AM
                 }
             }
             return dts;
+        }
+        public void ExecutarTransaccio(List<string> consultes)
+        {
+            conn.Open();
+            SqlTransaction transaccio = conn.BeginTransaction();
+            try
+            {
+                foreach (string consulta in consultes)
+                {
+                    SqlCommand cmd = new SqlCommand(consulta, conn, transaccio);
+                    cmd.ExecuteNonQuery();
+                }
+                transaccio.Commit();
+            }
+            catch
+            {
+                transaccio.Rollback(); 
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
     }
 }

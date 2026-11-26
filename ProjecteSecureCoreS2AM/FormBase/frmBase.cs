@@ -18,6 +18,8 @@ namespace ProjecteSecureCoreS2AM
         private AccesoDatos bd;
         private DataSet dts;
         private bool esNuevo;
+        private readonly List<(ComboBox Cmb, string Columna)> _fkConfigs = new List<(ComboBox, string)>();
+        private readonly List<string> _columnasFK = new List<string>();
 
         /// <summary>Nom de la taula de la base de dades sobre la qual opera aquest formulari.</summary>
         [Category("Secure Core"), Description("Nom de la taula de la base de dades a mantenir")]
@@ -59,10 +61,16 @@ namespace ProjecteSecureCoreS2AM
         {
             dts = bd.PortarTaula(Tabla);
             dgvDatos.DataSource = dts.Tables[0];
+
+            foreach (string nombre in _columnasFK)
+                if (dgvDatos.Columns.Contains(nombre))
+                    dgvDatos.Columns.Remove(nombre);
+            _columnasFK.Clear();
+            _fkConfigs.Clear();
+
             ConfigurarDGV();
             EnlazarTextBox();
         }
-
         /// <summary>
         /// Configura la graella de dades després de carregar el <see cref="DataSet"/>.
         /// La implementació per defecte oculta totes les columnes que comencen per "id".
@@ -79,6 +87,42 @@ namespace ProjecteSecureCoreS2AM
             }
         }
 
+        /// <summary>
+        /// Configura un <see cref="ComboBox"/> per mostrar els valors d'una taula forana i
+        /// afegeix una columna descriptiva al <see cref="DataGridView"/>.
+        /// Crida aquest mètode des de <see cref="ConfigurarDGV"/> a la subclasse.
+        /// </summary>
+        protected void ConfigurarFK(ComboBox cmb, string tablaForana, string campoValor, string campoDisplay, string columnaFK)
+        {
+            DataTable dtForana = bd.PortarDataTable(
+                "select " + campoValor + ", " + campoDisplay + " from " + tablaForana);
+
+            cmb.DataSource = dtForana;
+            cmb.DisplayMember = campoDisplay;
+            cmb.ValueMember = campoValor;
+
+            _fkConfigs.Add((cmb, columnaFK));
+
+            if (dgvDatos.Columns.Contains(columnaFK))
+                dgvDatos.Columns[columnaFK].Visible = false;
+
+            string nombreCol = "col_fk_" + columnaFK;
+            var colDGV = new DataGridViewComboBoxColumn
+            {
+                Name = nombreCol,
+                HeaderText = campoDisplay,
+                DataSource = dtForana,
+                DisplayMember = campoDisplay,
+                ValueMember = campoValor,
+                DataPropertyName = columnaFK,
+                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing,
+                ReadOnly = true
+            };
+            dgvDatos.Columns.Add(colDGV);
+            _columnasFK.Add(nombreCol);
+        }
+
+
         private IEnumerable<SWTextBox> CamposEnlazados()
         {
             return Controls.OfType<SWTextBox>().Where(txt => !string.IsNullOrEmpty(txt.CampoBD));
@@ -93,6 +137,11 @@ namespace ProjecteSecureCoreS2AM
                 txt.Validated -= ValidarTextBox;
                 txt.Validated += ValidarTextBox;
             }
+            foreach (var (cmb, columna) in _fkConfigs)
+            {
+                cmb.DataBindings.Clear();
+                cmb.DataBindings.Add("SelectedValue", dts.Tables[0], columna);
+            }
         }
 
         private void DesenlazarTextBox()
@@ -102,6 +151,10 @@ namespace ProjecteSecureCoreS2AM
                 txt.DataBindings.Clear();
                 txt.Text = "";
                 txt.Validated -= ValidarTextBox;
+            }
+            foreach (var (cmb, _) in _fkConfigs)
+            {
+                cmb.DataBindings.Clear();
             }
         }
 
@@ -191,6 +244,10 @@ namespace ProjecteSecureCoreS2AM
             foreach (SWTextBox txt in CamposEnlazados())
             {
                 dr[txt.CampoBD] = txt.Text == "" ? (object)DBNull.Value : txt.Text;
+            }
+            foreach (var (cmb, columna) in _fkConfigs)
+            {
+                dr[columna] = cmb.SelectedValue ?? (object)DBNull.Value;
             }
             dts.Tables[0].Rows.Add(dr);
         }
